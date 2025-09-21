@@ -1,0 +1,111 @@
+@model IEnumerable<PetShopWebsite.Models.Pet>
+@{
+    ViewData["Title"] = "Thú Cưng Nổi Bật";
+}
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">
+            <i class="fas fa-star text-warning"></i> Thú Cưng Nổi Bật
+        </h1>
+        <p class="lead text-muted">Những chú thú cưng được yêu thích nhất tại cửa hàng</p>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var pet in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-lg pet-card border-0 overflow-hidden" style="border-radius: 20px;">
+                        <div class="position-relative">
+                            <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" class="card-img-top" alt="@pet.Name" style="height: 250px; object-fit: cover;">
+                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);"></div>
+                            @if (pet.SalePrice.HasValue)
+                            {
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">
+                                    <i class="fas fa-fire me-1"></i>Giảm giá
+                                </span>
+                            }
+                            <span class="badge bg-warning position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">
+                                <i class="fas fa-star me-1"></i>Nổi bật
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                                <div class="d-flex align-items-center text-white">
+                                    <div class="me-2">
+                                        @if (pet.IsVaccinated)
+                                        {
+                                            <span class="badge bg-success rounded-pill me-1">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </span>
+                                        }
+                                        @if (pet.IsDewormed)
+                                        {
+                                            <span class="badge bg-info rounded-pill">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">@pet.Name</h5>
+                            <div class="pet-info mb-3">
+                                <p class="text-muted small mb-2 d-flex align-items-center">
+                                    <i class="fas fa-tag text-primary me-2"></i>
+                                    <span class="fw-semibold">@pet.Category.Name</span>
+                                    <span class="mx-2">•</span>
+                                    <span>@pet.Breed</span>
+                                </p>
+                                <p class="text-muted small mb-2 d-flex align-items-center">
+                                    <i class="fas fa-birthday-cake text-warning me-2"></i>
+                                    <span>@pet.Age tháng tuổi</span>
+                                </p>
+                                <p class="text-muted small mb-0 d-flex align-items-center">
+                                    <i class="fas fa-weight text-info me-2"></i>
+                                    <span>@pet.Weight kg</span>
+                                </p>
+                            </div>
+                            <div class="price-section mb-3">
+                                @if (pet.SalePrice.HasValue)
+                                {
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-decoration-line-through text-muted me-2">@pet.Price.ToString("N0") ₫</span>
+                                        <span class="text-danger fw-bold fs-5">@pet.SalePrice.Value.ToString("N0") ₫</span>
+                                    </div>
+                                    <small class="text-success">
+                                        <i class="fas fa-arrow-down me-1"></i>
+                                        Tiết kiệm @((pet.Price - pet.SalePrice.Value).ToString("N0")) ₫
+                                    </small>
+                                }
+                                else
+                                {
+                                    <span class="text-primary fw-bold fs-5">@pet.Price.ToString("N0") ₫</span>
+                                }
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <div class="d-grid gap-2">
+                                <a asp-action="Details" asp-route-id="@pet.Id" class="btn btn-primary btn-lg rounded-pill">
+                                    <i class="fas fa-eye me-2"></i>Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-paw fa-5x text-muted mb-3"></i>
+            <h3 class="text-muted">Chưa có thú cưng nổi bật nào</h3>
+            <p class="text-muted">Hãy quay lại sau để xem những chú thú cưng đáng yêu nhất!</p>
+            <a asp-action="Index" class="btn btn-primary btn-lg rounded-pill">
+                <i class="fas fa-arrow-left me-2"></i>Quay lại danh sách
+            </a>
+        </div>
+    }
+</div>

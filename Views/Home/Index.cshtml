@@ -1,0 +1,532 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+    var featuredPets = ViewBag.FeaturedPets as List<PetShopWebsite.Models.Pet>;
+    var categories = ViewBag.Categories as List<PetShopWebsite.Models.Category>;
+    var latestPets = ViewBag.LatestPets as List<PetShopWebsite.Models.Pet>;
+}
+
+<!-- Hero Section with Background -->
+<section class="hero-section position-relative overflow-hidden mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 80vh;">
+    <div class="hero-bg position-absolute w-100 h-100" style="background-image: url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1200&h=800&fit=crop'); background-size: cover; background-position: center; opacity: 0.2;"></div>
+    <div class="container position-relative h-100 d-flex align-items-center py-5">
+        <div class="row align-items-center w-100">
+            <div class="col-lg-6 text-white">
+                <div class="hero-content">
+                    <h1 class="display-3 fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                        🐾 <span class="text-warning">Cửa Hàng</span><br>
+                        <span class="text-info">Thú Cưng</span> Yêu Thương
+                    </h1>
+                    <p class="lead mb-4 fs-5">Tìm kiếm người bạn đồng hành hoàn hảo cho gia đình bạn. Chúng tôi cung cấp những chú thú cưng khỏe mạnh, đáng yêu và đã được chăm sóc tốt nhất.</p>
+                    <div class="hero-stats mb-4">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="text-warning fw-bold">500+</h3>
+                                    <p class="small">Thú cưng hạnh phúc</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="text-info fw-bold">1000+</h3>
+                                    <p class="small">Khách hàng tin tưởng</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="text-success fw-bold">5⭐</h3>
+                                    <p class="small">Đánh giá tuyệt vời</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a asp-controller="Pets" asp-action="Index" class="btn btn-warning btn-lg px-4 py-3 rounded-pill shadow-lg">
+                            <i class="fas fa-paw me-2"></i>Khám Phá Ngay
+                        </a>
+                        <a asp-controller="Account" asp-action="Register" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill">
+                            <i class="fas fa-heart me-2"></i>Tham Gia Cộng Đồng
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-images position-relative text-center">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=face"
+                             alt="Cute pets" class="img-fluid rounded-circle shadow-lg border border-5 border-white" style="width: 300px; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="floating-images">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=150&h=150&fit=crop&crop=face"
+                             alt="Dog" class="position-absolute rounded-circle shadow border border-3 border-warning"
+                             style="width: 120px; height: 120px; top: 20px; right: 50px; object-fit: cover; animation: float 3s ease-in-out infinite;">
+                        <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=150&h=150&fit=crop&crop=face"
+                             alt="Cat" class="position-absolute rounded-circle shadow border border-3 border-info"
+                             style="width: 100px; height: 100px; bottom: 50px; left: 30px; object-fit: cover; animation: float 3s ease-in-out infinite 1s;">
+                        <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=150&h=150&fit=crop&crop=face"
+                             alt="Rabbit" class="position-absolute rounded-circle shadow border border-3 border-success"
+                             style="width: 80px; height: 80px; top: 150px; left: 0px; object-fit: cover; animation: float 3s ease-in-out infinite 2s;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Decorative elements -->
+    <div class="position-absolute" style="top: 10%; left: 5%; font-size: 3rem; opacity: 0.1;">🐕</div>
+    <div class="position-absolute" style="top: 20%; right: 10%; font-size: 2rem; opacity: 0.1;">🐱</div>
+    <div class="position-absolute" style="bottom: 30%; left: 10%; font-size: 2.5rem; opacity: 0.1;">🐰</div>
+    <div class="position-absolute" style="bottom: 10%; right: 5%; font-size: 2rem; opacity: 0.1;">🐦</div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-primary mb-3">
+                <i class="fas fa-heart text-danger me-3"></i>Dịch Vụ Của Chúng Tôi
+            </h2>
+            <p class="lead text-muted">Chăm sóc toàn diện cho thú cưng yêu quý của bạn</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 h-100 bg-white rounded-4 shadow-sm border-0">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-stethoscope fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Khám Sức Khỏe</h5>
+                    <p class="text-muted">Kiểm tra sức khỏe định kỳ và tư vấn chăm sóc thú cưng chuyên nghiệp</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 h-100 bg-white rounded-4 shadow-sm border-0">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-cut fa-3x text-success"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Spa & Grooming</h5>
+                    <p class="text-muted">Dịch vụ tắm gội, cắt tỉa lông và chăm sóc làm đẹp cho thú cưng</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 h-100 bg-white rounded-4 shadow-sm border-0">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-graduation-cap fa-3x text-warning"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Huấn Luyện</h5>
+                    <p class="text-muted">Đào tạo kỹ năng cơ bản và nâng cao cho thú cưng của bạn</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 h-100 bg-white rounded-4 shadow-sm border-0">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-home fa-3x text-info"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Chăm Sóc Tại Nhà</h5>
+                    <p class="text-muted">Dịch vụ chăm sóc thú cưng tại nhà khi bạn bận rộn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section mb-5 py-5" style="background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-primary mb-3">
+                <i class="fas fa-heart text-danger"></i> Danh Mục Thú Cưng
+            </h2>
+            <p class="lead text-muted">Khám phá thế giới đa dạng của những người bạn bốn chân</p>
+        </div>
+        <div class="row g-4">
+            @if (categories != null)
+            {
+                @foreach (var category in categories)
+                {
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <a asp-controller="Pets" asp-action="Category" asp-route-id="@category.Id" class="text-decoration-none">
+                            <div class="card h-100 shadow-lg category-card border-0 overflow-hidden" style="transition: all 0.3s ease; border-radius: 20px;">
+                                <div class="position-relative">
+                                    <img src="@category.ImageUrl" alt="@category.Name" class="card-img-top" style="height: 150px; object-fit: cover;">
+                                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3));"></div>
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-center pb-2">
+                                        <div class="category-icon">
+                                            @switch (category.Name)
+                                            {
+                                                case "Chó":
+                                                    <i class="fas fa-dog fa-2x text-white"></i>
+                                                    break;
+                                                case "Mèo":
+                                                    <i class="fas fa-cat fa-2x text-white"></i>
+                                                    break;
+                                                case "Chim":
+                                                    <i class="fas fa-dove fa-2x text-white"></i>
+                                                    break;
+                                                case "Cá cảnh":
+                                                    <i class="fas fa-fish fa-2x text-white"></i>
+                                                    break;
+                                                case "Hamster":
+                                                    <i class="fas fa-otter fa-2x text-white"></i>
+                                                    break;
+                                                case "Thỏ":
+                                                    <i class="fas fa-rabbit fa-2x text-white"></i>
+                                                    break;
+                                                default:
+                                                    <i class="fas fa-paw fa-2x text-white"></i>
+                                                    break;
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-3">
+                                    <h6 class="card-title fw-bold text-primary mb-2">@category.Name</h6>
+                                    <p class="card-text small text-muted mb-0">@category.Description</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 text-center pb-3">
+                                    <small class="text-primary fw-bold">
+                                        <i class="fas fa-arrow-right me-1"></i>Xem thêm
+                                    </small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Featured Pets Section -->
+@if (featuredPets != null && featuredPets.Any())
+{
+    <section class="featured-pets-section mb-5 py-5" style="background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">
+                    <i class="fas fa-star text-warning"></i> Thú Cưng Nổi Bật
+                </h2>
+                <p class="lead text-muted">Những chú thú cưng được yêu thích nhất tại cửa hàng</p>
+                <div class="d-flex justify-content-center">
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-outline-primary btn-lg rounded-pill px-4">
+                        Xem tất cả <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-4">
+                @foreach (var pet in featuredPets.Take(4))
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 shadow-lg pet-card border-0 overflow-hidden" style="border-radius: 20px; transition: all 0.3s ease;">
+                            <div class="position-relative">
+                                <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" class="card-img-top" alt="@pet.Name" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);"></div>
+                                @if (pet.SalePrice.HasValue)
+                                {
+                                    <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">
+                                        <i class="fas fa-fire me-1"></i>Giảm giá
+                                    </span>
+                                }
+                                <span class="badge bg-warning position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">
+                                    <i class="fas fa-star me-1"></i>Nổi bật
+                                </span>
+                                <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                                    <div class="d-flex align-items-center text-white">
+                                        <div class="me-2">
+                                            @if (pet.IsVaccinated)
+                                            {
+                                                <span class="badge bg-success rounded-pill me-1">
+                                                    <i class="fas fa-shield-alt"></i>
+                                                </span>
+                                            }
+                                            @if (pet.IsDewormed)
+                                            {
+                                                <span class="badge bg-info rounded-pill">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold text-primary mb-3">@pet.Name</h5>
+                                <div class="pet-info mb-3">
+                                    <p class="text-muted small mb-2 d-flex align-items-center">
+                                        <i class="fas fa-tag text-primary me-2"></i>
+                                        <span class="fw-semibold">@pet.Category.Name</span>
+                                        <span class="mx-2">•</span>
+                                        <span>@pet.Breed</span>
+                                    </p>
+                                    <p class="text-muted small mb-2 d-flex align-items-center">
+                                        <i class="fas fa-birthday-cake text-warning me-2"></i>
+                                        <span>@pet.Age tháng tuổi</span>
+                                    </p>
+                                    <p class="text-muted small mb-0 d-flex align-items-center">
+                                        <i class="fas fa-weight text-info me-2"></i>
+                                        <span>@pet.Weight kg</span>
+                                    </p>
+                                </div>
+                                <div class="price-section mb-3">
+                                    @if (pet.SalePrice.HasValue)
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-decoration-line-through text-muted me-2">@pet.Price.ToString("N0") ₫</span>
+                                            <span class="text-danger fw-bold fs-5">@pet.SalePrice.Value.ToString("N0") ₫</span>
+                                        </div>
+                                        <small class="text-success">
+                                            <i class="fas fa-arrow-down me-1"></i>
+                                            Tiết kiệm @((pet.Price - pet.SalePrice.Value).ToString("N0")) ₫
+                                        </small>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-primary fw-bold fs-5">@pet.Price.ToString("N0") ₫</span>
+                                    }
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                <div class="d-grid gap-2">
+                                    <a asp-controller="Pets" asp-action="Details" asp-route-id="@pet.Id" class="btn btn-primary btn-lg rounded-pill">
+                                        <i class="fas fa-eye me-2"></i>Xem chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+
+<!-- Services Section -->
+<section class="services-section py-5 mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container">
+        <div class="text-center text-white mb-5">
+            <h2 class="display-5 fw-bold mb-3">
+                <i class="fas fa-heart text-warning"></i> Cam Kết Của Chúng Tôi
+            </h2>
+            <p class="lead">Mang đến trải nghiệm tuyệt vời nhất cho bạn và thú cưng</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center text-white">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-shield-alt fa-3x text-warning"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Bảo Đảm Sức Khỏe</h5>
+                    <p>Tất cả thú cưng đều được kiểm tra sức khỏe định kỳ và tiêm phòng đầy đủ</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center text-white">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-truck fa-3x text-info"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Giao Hàng Tận Nơi</h5>
+                    <p>Dịch vụ giao hàng an toàn, nhanh chóng đến tận nhà trong vòng 24h</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center text-white">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-headset fa-3x text-success"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Hỗ Trợ 24/7</h5>
+                    <p>Đội ngũ chuyên gia luôn sẵn sàng tư vấn và hỗ trợ bạn mọi lúc</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center text-white">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-medal fa-3x text-danger"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Chất Lượng Đảm Bảo</h5>
+                    <p>Cam kết hoàn tiền 100% nếu không hài lòng trong vòng 7 ngày</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Pets Section -->
+@if (latestPets != null && latestPets.Any())
+{
+    <section class="latest-pets-section mb-5 py-5" style="background: linear-gradient(45deg, #f0f8ff 0%, #e6f3ff 100%);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">
+                    <i class="fas fa-clock text-info"></i> Thú Cưng Mới Nhất
+                </h2>
+                <p class="lead text-muted">Những thành viên mới nhất đang chờ đón gia đình mới</p>
+                <div class="d-flex justify-content-center">
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-info btn-lg rounded-pill px-4">
+                        Xem tất cả <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var pet in latestPets)
+                {
+                    <div class="col-lg-2 col-md-4 col-6 mb-4">
+                        <div class="card h-100 shadow-sm pet-card-small">
+                            <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" class="card-img-top" alt="@pet.Name" style="height: 150px; object-fit: cover;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title small">@pet.Name</h6>
+                                <p class="text-muted small mb-1">@pet.Category.Name</p>
+                                <p class="text-primary fw-bold small mb-0">
+                                    @((pet.SalePrice ?? pet.Price).ToString("N0")) ₫
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent p-2">
+                                <a asp-controller="Pets" asp-action="Details" asp-route-id="@pet.Id" class="btn btn-sm btn-outline-primary w-100">
+                                    Xem
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+
+<!-- Features Section -->
+<section class="features-section bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Tại sao chọn chúng tôi?</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-heart fa-3x text-danger"></i>
+                    </div>
+                    <h5>Thú cưng khỏe mạnh</h5>
+                    <p class="text-muted">Tất cả thú cưng đều được kiểm tra sức khỏe và tiêm phòng đầy đủ</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-shield-alt fa-3x text-success"></i>
+                    </div>
+                    <h5>Bảo hành chất lượng</h5>
+                    <p class="text-muted">Cam kết bảo hành sức khỏe thú cưng trong 30 ngày đầu</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-shipping-fast fa-3x text-primary"></i>
+                    </div>
+                    <h5>Giao hàng tận nơi</h5>
+                    <p class="text-muted">Dịch vụ giao hàng an toàn và nhanh chóng tại TP.HCM</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-headset fa-3x text-info"></i>
+                    </div>
+                    <h5>Hỗ trợ 24/7</h5>
+                    <p class="text-muted">Đội ngũ chuyên gia sẵn sàng tư vấn chăm sóc thú cưng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-3">
+                <i class="fas fa-award text-warning me-3"></i>Tại Sao Chọn Chúng Tôi?
+            </h2>
+            <p class="lead text-light">Những lý do khiến khách hàng tin tưởng và yêu thích dịch vụ của chúng tôi</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center text-white">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-shield-alt fa-4x text-warning"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Đảm Bảo Chất Lượng</h4>
+                    <p class="text-light">Tất cả thú cưng đều được kiểm tra sức khỏe kỹ lưỡng và có giấy tờ đầy đủ</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center text-white">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-user-md fa-4x text-info"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Đội Ngũ Chuyên Nghiệp</h4>
+                    <p class="text-light">Bác sĩ thú y và nhân viên có kinh nghiệm lâu năm trong lĩnh vực chăm sóc thú cưng</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center text-white">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-clock fa-4x text-success"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Hỗ Trợ 24/7</h4>
+                    <p class="text-light">Luôn sẵn sàng tư vấn và hỗ trợ khách hàng mọi lúc, mọi nơi</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center text-white">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-shipping-fast fa-4x text-warning"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Giao Hàng Nhanh</h4>
+                    <p class="text-light">Dịch vụ giao hàng tận nơi an toàn và nhanh chóng trong nội thành</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center text-white">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-money-bill-wave fa-4x text-info"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Giá Cả Hợp Lý</h4>
+                    <p class="text-light">Cam kết giá tốt nhất thị trường với nhiều chương trình ưu đãi hấp dẫn</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center text-white">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-handshake fa-4x text-success"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Bảo Hành Dài Hạn</h4>
+                    <p class="text-light">Chế độ bảo hành và chăm sóc sau bán hàng chu đáo, tận tình</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.pet-card-small:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+}
+</style>

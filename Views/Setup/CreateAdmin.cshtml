@@ -1,0 +1,124 @@
+@{
+    ViewData["Title"] = "Tạo Tài Khoản Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-user-shield me-2"></i>
+                        Tạo Tài Khoản Admin
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(ViewBag.Success))
+                    {
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>
+                            @ViewBag.Success
+                        </div>
+                        <div class="text-center">
+                            <a href="/Admin" class="btn btn-primary">
+                                <i class="fas fa-tachometer-alt me-2"></i>
+                                Đi đến trang Admin
+                            </a>
+                        </div>
+                    }
+                    else
+                    {
+                        @if (!string.IsNullOrEmpty(ViewBag.Error))
+                        {
+                            <div class="alert alert-danger">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                @ViewBag.Error
+                            </div>
+                        }
+
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Admin</label>
+                                <input type="email" class="form-control" id="email" name="email" 
+                                       value="admin@petshop.com" required>
+                                <div class="form-text">Email này sẽ được dùng để đăng nhập vào trang admin</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <input type="password" class="form-control" id="password" name="password" 
+                                       value="Admin123!" required>
+                                <div class="form-text">Mật khẩu phải có ít nhất 6 ký tự, bao gồm chữ hoa, chữ thường và số</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" 
+                                       value="Admin123!" required>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-user-plus me-2"></i>
+                                    Tạo Tài Khoản Admin
+                                </button>
+                            </div>
+                        </form>
+
+                        <hr>
+
+                        <div class="text-center">
+                            <a href="/Setup/TestAdmin" class="btn btn-outline-info">
+                                <i class="fas fa-search me-2"></i>
+                                Kiểm tra tài khoản Admin hiện có
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Hướng dẫn
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Nhập email và mật khẩu cho tài khoản admin</li>
+                        <li>Nhấn "Tạo Tài Khoản Admin"</li>
+                        <li>Sau khi tạo thành công, đi đến <a href="/Admin">/Admin</a></li>
+                        <li>Đăng nhập với email và mật khẩu vừa tạo</li>
+                    </ol>
+
+                    <div class="alert alert-warning mt-3">
+                        <strong>Lưu ý:</strong> Trang này chỉ dùng để setup ban đầu. 
+                        Sau khi có tài khoản admin, bạn nên xóa controller này để bảo mật.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+    
+    .card-header {
+        border-bottom: none;
+    }
+    
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    .btn {
+        border-radius: 5px;
+    }
+</style>

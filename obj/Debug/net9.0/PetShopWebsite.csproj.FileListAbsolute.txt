@@ -1,0 +1,870 @@
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.csproj.AssemblyReference.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.AssemblyInfoInputs.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.AssemblyInfo.cs
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.csproj.CoreCompileInputs.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.MvcApplicationPartsAssemblyInfo.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.RazorAssemblyInfo.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.RazorAssemblyInfo.cs
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\appsettings.Development.json
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\appsettings.json
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.staticwebassets.runtime.json
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.staticwebassets.endpoints.json
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.exe
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.deps.json
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.runtimeconfig.json
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.pdb
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Humanizer.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.core.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\System.CodeDom.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\test\.NET SDK\PetShopWebsite\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.MvcApplicationPartsAssemblyInfo.cs
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\scopedcss\bundle\PetShopWebsite.styles.css
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\scopedcss\projectbundle\PetShopWebsite.bundle.scp.css
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\wcykn2hob7-61n19gt1b8.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\27tgd60n0m-xtxxf3hu2r.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\qwxw6kgjt4-bqjiyaj88i.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\t7mi41czv9-c2jlpeoesf.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\1mh8zthlmz-erw9l3u2r3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\hdd822oiw3-aexeepp0ev.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\35po9mda4t-d7shbmvgxk.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\v8jbnghxwu-ausgxo2sd3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\vxee2bhubr-k8d9w2qqmf.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\bgixm7at1z-cosvhxvwiu.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\dimrkjnbdz-ub07r2b239.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\tak4eyysz1-fvhpjtyr6v.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\5unjx7zi5k-b7pk76d08c.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\eqb6uv2f48-fsbi9cje9m.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\2ml8j51qkm-rzd6atqjts.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\tsfq057yxq-ee0r1s7dh0.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\i5id8qkixg-dxx9fxp4il.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\g8unagjsi1-jd9uben2k1.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\auhez7zrn9-khv3u5hwcm.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\rz8s4dqh4s-r4e9w2rdcm.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\5kcead20ha-lcd1t2u6c8.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\s9edwhgncq-c2oey78nd0.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\giv6uzhzfg-tdbxkamptv.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\szpko8dvkl-j5mq2jizvt.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\tr9cy6nyno-06098lyss8.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\acjewkgan1-nvvlpmu67g.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\f4s2yae38v-s35ty4nyc5.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\otu2r47igv-pj5nd1wqec.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\m8eh0ve9eo-46ein0sx1k.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\aij9rob8iw-v0zj4ognzu.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\uxekyftgev-37tfw0ft22.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\fxk4op7pfo-hrwsygsryq.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\j41d3pcjd7-pk9g2wxc8p.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\3soxljptz4-ft3s53vfgj.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\m8lk5urw5q-6cfz1n2cew.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\eqt0fmxebo-6pdc2jztkx.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\wvz7z6dr5f-493y06b0oq.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\7yd3quuovy-iovd86k7lj.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\j89jw65ob7-vr1egmr9el.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ep16rhynv6-kbrnm935zg.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\x8dcweb1vd-jj8uyg4cgr.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\9og7ecjao4-y7v9cxd14o.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\p801qb1har-notf2xhcfb.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\x5ezi2z4uc-h1s4sie4z3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\afck15avcg-63fj8s7r0e.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\9cub2pjme5-0j3bgjxly4.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\43g1cz0sib-47otxtyo56.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ywitrqdvij-4v8eqarkd7.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\g83bpa2law-356vix0kms.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\sf6nmr16an-83jwlth58m.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\gm2xl9z3pg-mrlpezrjn3.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\5n5z9tblon-lzl9nlhx6b.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\n1ry3tj0qt-ag7o75518u.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\wi0wfjo2bw-x0q3zqp4vz.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\t24frcjbuy-0i3buxo5is.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\1gwm3zbqks-o1o13a6vjx.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\dkeaz84bvx-ttgo8qnofa.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\rfdgzsp5zj-2z0ns9nrw6.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\lqvdmoczh5-muycvpuwrr.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\30sr0it263-87fc7y1x7t.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\ughi2qvahr-mlv21k5csn.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\xft6ogif7q-jg7699auxs.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\wvgr0vbz7d-jg7699auxs.gz
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\staticwebassets.development.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopW.8CA8F8D9.Up2Date
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.dll
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\refint\PetShopWebsite.dll
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.pdb
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.genruntimeconfig.cache
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\ref\PetShopWebsite.dll
+D:\test\.NET SDK\PetShopWebsite\obj\Debug\net9.0\compressed\unkdcwxcpt-5aab1of5qx.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\appsettings.Development.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\appsettings.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.staticwebassets.endpoints.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.staticwebassets.runtime.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.exe
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.deps.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.runtimeconfig.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.pdb
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Humanizer.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.core.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\System.CodeDom.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.csproj.AssemblyReference.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.GeneratedMSBuildEditorConfig.editorconfig
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.AssemblyInfoInputs.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.AssemblyInfo.cs
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.csproj.CoreCompileInputs.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.MvcApplicationPartsAssemblyInfo.cs
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.MvcApplicationPartsAssemblyInfo.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.RazorAssemblyInfo.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.RazorAssemblyInfo.cs
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\scopedcss\bundle\PetShopWebsite.styles.css
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\scopedcss\projectbundle\PetShopWebsite.bundle.scp.css
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\unkdcwxcpt-5aab1of5qx.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\wcykn2hob7-61n19gt1b8.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\27tgd60n0m-xtxxf3hu2r.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\qwxw6kgjt4-bqjiyaj88i.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\t7mi41czv9-c2jlpeoesf.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\1mh8zthlmz-erw9l3u2r3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\hdd822oiw3-aexeepp0ev.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\35po9mda4t-d7shbmvgxk.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\v8jbnghxwu-ausgxo2sd3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\vxee2bhubr-k8d9w2qqmf.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\bgixm7at1z-cosvhxvwiu.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\dimrkjnbdz-ub07r2b239.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\tak4eyysz1-fvhpjtyr6v.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\5unjx7zi5k-b7pk76d08c.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\eqb6uv2f48-fsbi9cje9m.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\2ml8j51qkm-rzd6atqjts.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\tsfq057yxq-ee0r1s7dh0.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\i5id8qkixg-dxx9fxp4il.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\g8unagjsi1-jd9uben2k1.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\auhez7zrn9-khv3u5hwcm.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\rz8s4dqh4s-r4e9w2rdcm.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\5kcead20ha-lcd1t2u6c8.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\s9edwhgncq-c2oey78nd0.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\giv6uzhzfg-tdbxkamptv.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\szpko8dvkl-j5mq2jizvt.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\tr9cy6nyno-06098lyss8.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\acjewkgan1-nvvlpmu67g.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\f4s2yae38v-s35ty4nyc5.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\otu2r47igv-pj5nd1wqec.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\m8eh0ve9eo-46ein0sx1k.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\aij9rob8iw-v0zj4ognzu.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\uxekyftgev-37tfw0ft22.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\fxk4op7pfo-hrwsygsryq.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\j41d3pcjd7-pk9g2wxc8p.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\3soxljptz4-ft3s53vfgj.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\m8lk5urw5q-6cfz1n2cew.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\eqt0fmxebo-6pdc2jztkx.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\wvz7z6dr5f-493y06b0oq.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\7yd3quuovy-iovd86k7lj.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\j89jw65ob7-vr1egmr9el.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ep16rhynv6-kbrnm935zg.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\x8dcweb1vd-jj8uyg4cgr.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\9og7ecjao4-y7v9cxd14o.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\p801qb1har-notf2xhcfb.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\x5ezi2z4uc-h1s4sie4z3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\afck15avcg-63fj8s7r0e.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\9cub2pjme5-0j3bgjxly4.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\43g1cz0sib-47otxtyo56.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ywitrqdvij-4v8eqarkd7.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\g83bpa2law-356vix0kms.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\sf6nmr16an-83jwlth58m.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\gm2xl9z3pg-mrlpezrjn3.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\5n5z9tblon-lzl9nlhx6b.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\n1ry3tj0qt-ag7o75518u.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\wi0wfjo2bw-x0q3zqp4vz.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\t24frcjbuy-0i3buxo5is.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\1gwm3zbqks-o1o13a6vjx.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\dkeaz84bvx-ttgo8qnofa.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\rfdgzsp5zj-2z0ns9nrw6.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\lqvdmoczh5-muycvpuwrr.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\30sr0it263-87fc7y1x7t.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\ughi2qvahr-mlv21k5csn.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\xft6ogif7q-jg7699auxs.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\compressed\wvgr0vbz7d-jg7699auxs.gz
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\staticwebassets.development.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopW.8CA8F8D9.Up2Date
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\refint\PetShopWebsite.dll
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.pdb
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.genruntimeconfig.cache
+D:\duyht\BTL CNTT\ASP.NET\DK23TTC10\website đặt dịch vụ chăm sóc thú cưng tại nhà\kimnm040796\PetShopWebsite\obj\Debug\net9.0\ref\PetShopWebsite.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\appsettings.Development.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\appsettings.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.staticwebassets.endpoints.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.staticwebassets.runtime.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.exe
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.deps.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.runtimeconfig.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\PetShopWebsite.pdb
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Humanizer.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.core.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\System.CodeDom.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.csproj.AssemblyReference.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.AssemblyInfoInputs.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.AssemblyInfo.cs
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.csproj.CoreCompileInputs.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.MvcApplicationPartsAssemblyInfo.cs
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.MvcApplicationPartsAssemblyInfo.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.RazorAssemblyInfo.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.RazorAssemblyInfo.cs
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\scopedcss\bundle\PetShopWebsite.styles.css
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\scopedcss\projectbundle\PetShopWebsite.bundle.scp.css
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\unkdcwxcpt-5aab1of5qx.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\wcykn2hob7-61n19gt1b8.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\27tgd60n0m-xtxxf3hu2r.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\qwxw6kgjt4-bqjiyaj88i.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\t7mi41czv9-c2jlpeoesf.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\1mh8zthlmz-erw9l3u2r3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\hdd822oiw3-aexeepp0ev.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\35po9mda4t-d7shbmvgxk.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\v8jbnghxwu-ausgxo2sd3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\vxee2bhubr-k8d9w2qqmf.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\bgixm7at1z-cosvhxvwiu.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\dimrkjnbdz-ub07r2b239.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\tak4eyysz1-fvhpjtyr6v.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\5unjx7zi5k-b7pk76d08c.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\eqb6uv2f48-fsbi9cje9m.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\2ml8j51qkm-rzd6atqjts.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\tsfq057yxq-ee0r1s7dh0.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\i5id8qkixg-dxx9fxp4il.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\g8unagjsi1-jd9uben2k1.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\auhez7zrn9-khv3u5hwcm.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\rz8s4dqh4s-r4e9w2rdcm.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\5kcead20ha-lcd1t2u6c8.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\s9edwhgncq-c2oey78nd0.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\giv6uzhzfg-tdbxkamptv.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\szpko8dvkl-j5mq2jizvt.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\tr9cy6nyno-06098lyss8.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\acjewkgan1-nvvlpmu67g.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\f4s2yae38v-s35ty4nyc5.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\otu2r47igv-pj5nd1wqec.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\m8eh0ve9eo-46ein0sx1k.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\aij9rob8iw-v0zj4ognzu.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\uxekyftgev-37tfw0ft22.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\fxk4op7pfo-hrwsygsryq.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\j41d3pcjd7-pk9g2wxc8p.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\3soxljptz4-ft3s53vfgj.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\m8lk5urw5q-6cfz1n2cew.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\eqt0fmxebo-6pdc2jztkx.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\wvz7z6dr5f-493y06b0oq.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\7yd3quuovy-iovd86k7lj.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\j89jw65ob7-vr1egmr9el.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ep16rhynv6-kbrnm935zg.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\x8dcweb1vd-jj8uyg4cgr.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\9og7ecjao4-y7v9cxd14o.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\p801qb1har-notf2xhcfb.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\x5ezi2z4uc-h1s4sie4z3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\afck15avcg-63fj8s7r0e.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\9cub2pjme5-0j3bgjxly4.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\43g1cz0sib-47otxtyo56.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ywitrqdvij-4v8eqarkd7.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\g83bpa2law-356vix0kms.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\sf6nmr16an-83jwlth58m.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\gm2xl9z3pg-mrlpezrjn3.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\5n5z9tblon-lzl9nlhx6b.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\n1ry3tj0qt-ag7o75518u.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\wi0wfjo2bw-x0q3zqp4vz.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\t24frcjbuy-0i3buxo5is.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\1gwm3zbqks-o1o13a6vjx.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\dkeaz84bvx-ttgo8qnofa.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\rfdgzsp5zj-2z0ns9nrw6.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\lqvdmoczh5-muycvpuwrr.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\30sr0it263-87fc7y1x7t.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\ughi2qvahr-mlv21k5csn.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\xft6ogif7q-jg7699auxs.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\compressed\wvgr0vbz7d-jg7699auxs.gz
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\staticwebassets.development.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopW.8CA8F8D9.Up2Date
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\refint\PetShopWebsite.dll
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.pdb
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\PetShopWebsite.genruntimeconfig.cache
+D:\New folder\ASP.NET\28092025- doanphuocmien\website chăm sóc thú cưng\2\PetShopWebsite\obj\Debug\net9.0\ref\PetShopWebsite.dll

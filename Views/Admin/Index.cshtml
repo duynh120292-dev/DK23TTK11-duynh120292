@@ -1,0 +1,283 @@
+@model PetShopWebsite.ViewModels.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Statistics Cards -->
+<div class="row mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card border-left-primary">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Tổng Thú Cưng
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalPets</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-paw fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card border-left-success">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Tổng Đơn Hàng
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalOrders</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card border-left-info">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            Người Dùng
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalUsers</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-users fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card border-left-warning">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Doanh Thu
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalRevenue.ToString("N0") ₫</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Recent Orders -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0 font-weight-bold">Đơn Hàng Gần Đây</h6>
+                <a asp-action="Orders" class="btn btn-sm btn-outline-light">Xem tất cả</a>
+            </div>
+            <div class="card-body">
+                @if (Model.RecentOrders.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Mã ĐH</th>
+                                    <th>Khách hàng</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var order in Model.RecentOrders)
+                                {
+                                    <tr>
+                                        <td>
+                                            <a asp-action="Orders" asp-route-search="@order.OrderNumber" class="text-decoration-none">
+                                                #@order.OrderNumber
+                                            </a>
+                                        </td>
+                                        <td>@order.ShippingName</td>
+                                        <td>@order.TotalAmount.ToString("N0") ₫</td>
+                                        <td>
+                                            <span class="badge 
+                                                @(order.Status == OrderStatus.Pending ? "bg-warning" :
+                                                  order.Status == OrderStatus.Confirmed ? "bg-info" :
+                                                  order.Status == OrderStatus.Processing ? "bg-primary" :
+                                                  order.Status == OrderStatus.Shipping ? "bg-secondary" :
+                                                  order.Status == OrderStatus.Delivered ? "bg-success" :
+                                                  "bg-danger")">
+                                                @(order.Status == OrderStatus.Pending ? "Chờ xác nhận" :
+                                                  order.Status == OrderStatus.Confirmed ? "Đã xác nhận" :
+                                                  order.Status == OrderStatus.Processing ? "Đang xử lý" :
+                                                  order.Status == OrderStatus.Shipping ? "Đang giao" :
+                                                  order.Status == OrderStatus.Delivered ? "Đã giao" :
+                                                  "Đã hủy")
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted text-center py-3">Chưa có đơn hàng nào</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Pets -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0 font-weight-bold">Thú Cưng Nổi Bật</h6>
+                <a asp-action="Pets" class="btn btn-sm btn-outline-light">Xem tất cả</a>
+            </div>
+            <div class="card-body">
+                @if (Model.TopPets.Any())
+                {
+                    @foreach (var pet in Model.TopPets)
+                    {
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" 
+                                 alt="@pet.Name" 
+                                 class="rounded me-3" 
+                                 style="width: 50px; height: 50px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">@pet.Name</h6>
+                                <small class="text-muted">@pet.Category?.Name - @pet.Price.ToString("N0") ₫</small>
+                            </div>
+                            <div>
+                                @if (pet.IsFeatured)
+                                {
+                                    <span class="badge bg-warning text-dark">Nổi bật</span>
+                                }
+                                @if (pet.StockQuantity <= 2)
+                                {
+                                    <span class="badge bg-danger">Sắp hết</span>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted text-center py-3">Chưa có thú cưng nào</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Low Stock Alert -->
+@if (Model.LowStockPets.Any())
+{
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-left-danger">
+                <div class="card-header bg-danger text-white py-3">
+                    <h6 class="m-0 font-weight-bold">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        Cảnh Báo: Thú Cưng Sắp Hết Hàng
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        @foreach (var pet in Model.LowStockPets)
+                        {
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" 
+                                         alt="@pet.Name" 
+                                         class="rounded me-3" 
+                                         style="width: 40px; height: 40px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0">@pet.Name</h6>
+                                        <small class="text-danger">Còn lại: @pet.StockQuantity</small>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Quick Actions -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold">Thao Tác Nhanh</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <a asp-action="Pets" class="btn btn-success w-100">
+                            <i class="fas fa-plus me-2"></i>Quản Lý Thú Cưng
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <a asp-action="Orders" class="btn btn-primary w-100">
+                            <i class="fas fa-shopping-cart me-2"></i>Quản Lý Đơn Hàng
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <a asp-action="Users" class="btn btn-info w-100">
+                            <i class="fas fa-users me-2"></i>Quản Lý User
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <a asp-action="Statistics" class="btn btn-warning w-100">
+                            <i class="fas fa-chart-bar me-2"></i>Xem Thống Kê
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.border-left-primary {
+    border-left: 4px solid #4e73df !important;
+}
+
+.border-left-success {
+    border-left: 4px solid #1cc88a !important;
+}
+
+.border-left-info {
+    border-left: 4px solid #36b9cc !important;
+}
+
+.border-left-warning {
+    border-left: 4px solid #f6c23e !important;
+}
+
+.border-left-danger {
+    border-left: 4px solid #e74a3b !important;
+}
+
+.text-xs {
+    font-size: 0.7rem;
+}
+</style>

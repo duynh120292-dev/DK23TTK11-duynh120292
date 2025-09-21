@@ -1,0 +1,213 @@
+@model List<PetShopWebsite.Models.Category>
+@{
+    ViewData["Title"] = "Quản Lý Danh Mục";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Quản Lý Danh Mục</h1>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#addCategoryModal">
+        <i class="fas fa-plus"></i> Thêm Danh Mục
+    </a>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Danh Sách Danh Mục</h6>
+    </div>
+    <div class="card-body">
+        @if (Model.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Hình Ảnh</th>
+                            <th>Tên Danh Mục</th>
+                            <th>Mô Tả</th>
+                            <th>Số Thú Cưng</th>
+                            <th>Thứ Tự</th>
+                            <th>Trạng Thái</th>
+                            <th>Ngày Tạo</th>
+                            <th>Thao Tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var category in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(category.ImageUrl))
+                                    {
+                                        <img src="@category.ImageUrl" alt="@category.Name" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                    }
+                                    else
+                                    {
+                                        <div class="bg-light d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                            <i class="fas fa-image text-muted"></i>
+                                        </div>
+                                    }
+                                </td>
+                                <td>@category.Name</td>
+                                <td>@(category.Description ?? "Không có mô tả")</td>
+                                <td>
+                                    <span class="badge badge-info">@category.PetCount</span>
+                                </td>
+                                <td>@category.DisplayOrder</td>
+                                <td>
+                                    @if (category.IsActive)
+                                    {
+                                        <span class="badge badge-success">Hoạt động</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge badge-secondary">Không hoạt động</span>
+                                    }
+                                </td>
+                                <td>@category.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="editCategory(@category.Id)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="deleteCategory(@category.Id)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="fas fa-list fa-3x text-muted mb-3"></i>
+                <h5 class="text-muted">Chưa có danh mục nào</h5>
+                <p class="text-muted">Hãy thêm danh mục đầu tiên cho cửa hàng của bạn.</p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#addCategoryModal">
+                    <i class="fas fa-plus"></i> Thêm Danh Mục
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Add Category Modal -->
+<div class="modal fade" id="addCategoryModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thêm Danh Mục Mới</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <form id="addCategoryForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="categoryName">Tên Danh Mục *</label>
+                        <input type="text" class="form-control" id="categoryName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryDescription">Mô Tả</label>
+                        <textarea class="form-control" id="categoryDescription" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryImageUrl">URL Hình Ảnh</label>
+                        <input type="url" class="form-control" id="categoryImageUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryDisplayOrder">Thứ Tự Hiển Thị</label>
+                        <input type="number" class="form-control" id="categoryDisplayOrder" value="1" min="1">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="categoryIsActive" checked>
+                        <label class="form-check-label" for="categoryIsActive">
+                            Hoạt động
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Thêm Danh Mục</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Category Modal -->
+<div class="modal fade" id="editCategoryModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Chỉnh Sửa Danh Mục</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <form id="editCategoryForm">
+                <input type="hidden" id="editCategoryId">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="editCategoryName">Tên Danh Mục *</label>
+                        <input type="text" class="form-control" id="editCategoryName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editCategoryDescription">Mô Tả</label>
+                        <textarea class="form-control" id="editCategoryDescription" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="editCategoryImageUrl">URL Hình Ảnh</label>
+                        <input type="url" class="form-control" id="editCategoryImageUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="editCategoryDisplayOrder">Thứ Tự Hiển Thị</label>
+                        <input type="number" class="form-control" id="editCategoryDisplayOrder" min="1">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="editCategoryIsActive">
+                        <label class="form-check-label" for="editCategoryIsActive">
+                            Hoạt động
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function editCategory(id) {
+            // TODO: Implement edit category functionality
+            alert('Chức năng chỉnh sửa sẽ được triển khai sau');
+        }
+
+        function deleteCategory(id) {
+            if (confirm('Bạn có chắc chắn muốn xóa danh mục này?')) {
+                // TODO: Implement delete category functionality
+                alert('Chức năng xóa sẽ được triển khai sau');
+            }
+        }
+
+        $('#addCategoryForm').on('submit', function(e) {
+            e.preventDefault();
+            // TODO: Implement add category functionality
+            alert('Chức năng thêm danh mục sẽ được triển khai sau');
+        });
+
+        $('#editCategoryForm').on('submit', function(e) {
+            e.preventDefault();
+            // TODO: Implement edit category functionality
+            alert('Chức năng cập nhật danh mục sẽ được triển khai sau');
+        });
+    </script>
+}

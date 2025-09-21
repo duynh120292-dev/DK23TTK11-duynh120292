@@ -1,0 +1,265 @@
+@model IEnumerable<PetShopWebsite.Models.Pet>
+@{
+    ViewData["Title"] = ViewBag.CategoryName + " - Danh Mục Thú Cưng";
+}
+
+<div class="container my-5">
+    <!-- Category Header -->
+    <div class="category-header text-center mb-5 p-5 rounded-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="text-white">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="fas fa-paw text-warning me-3"></i>@ViewBag.CategoryName
+            </h1>
+            @if (!string.IsNullOrEmpty(ViewBag.CategoryDescription))
+            {
+                <p class="lead mb-4">@ViewBag.CategoryDescription</p>
+            }
+            <div class="category-stats">
+                <span class="badge bg-warning text-dark px-4 py-2 rounded-pill fs-6">
+                    <i class="fas fa-heart me-2"></i>@Model.Count() thú cưng đáng yêu
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+                    <i class="fas fa-home me-1"></i>Trang chủ
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a asp-controller="Pets" asp-action="Index" class="text-decoration-none">
+                    <i class="fas fa-paw me-1"></i>Thú cưng
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewBag.CategoryName</li>
+        </ol>
+    </nav>
+
+    <!-- Filter and Sort Section -->
+    <div class="filter-section mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h5 class="text-muted mb-0">
+                    <i class="fas fa-filter me-2"></i>Tìm thấy @Model.Count() kết quả
+                </h5>
+            </div>
+            <div class="col-md-6 text-end">
+                <div class="d-flex gap-2 justify-content-end flex-wrap">
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-outline-primary btn-sm rounded-pill">
+                        <i class="fas fa-th me-1"></i>Tất cả danh mục
+                    </a>
+                    <a asp-controller="Pets" asp-action="Featured" class="btn btn-outline-warning btn-sm rounded-pill">
+                        <i class="fas fa-star me-1"></i>Nổi bật
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pets Grid -->
+    @if (Model != null && Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var pet in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-lg pet-card border-0 overflow-hidden" style="border-radius: 20px;">
+                        <div class="position-relative">
+                            <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" class="card-img-top" alt="@pet.Name" style="height: 250px; object-fit: cover;">
+                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);"></div>
+                            
+                            @if (pet.SalePrice.HasValue)
+                            {
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">
+                                    <i class="fas fa-fire me-1"></i>Giảm giá
+                                </span>
+                            }
+                            
+                            @if (pet.IsFeatured)
+                            {
+                                <span class="badge bg-warning position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">
+                                    <i class="fas fa-star me-1"></i>Nổi bật
+                                </span>
+                            }
+                            
+                            <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                                <div class="d-flex align-items-center text-white">
+                                    <div class="me-2">
+                                        @if (pet.IsVaccinated)
+                                        {
+                                            <span class="badge bg-success rounded-pill me-1" title="Đã tiêm phòng">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </span>
+                                        }
+                                        @if (pet.IsDewormed)
+                                        {
+                                            <span class="badge bg-info rounded-pill" title="Đã tẩy giun">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">@pet.Name</h5>
+                            <div class="pet-info mb-3">
+                                <p class="text-muted small mb-2 d-flex align-items-center">
+                                    <i class="fas fa-tag text-primary me-2"></i>
+                                    <span class="fw-semibold">@pet.Category.Name</span>
+                                    <span class="mx-2">•</span>
+                                    <span>@pet.Breed</span>
+                                </p>
+                                <p class="text-muted small mb-2 d-flex align-items-center">
+                                    <i class="fas fa-birthday-cake text-warning me-2"></i>
+                                    <span>@pet.Age tháng tuổi</span>
+                                    <span class="mx-2">•</span>
+                                    <i class="fas fa-weight text-info me-1"></i>
+                                    <span>@pet.Weight kg</span>
+                                </p>
+                                <p class="text-muted small mb-0 d-flex align-items-center">
+                                    <i class="fas fa-venus-mars text-secondary me-2"></i>
+                                    <span>@pet.Gender</span>
+                                    <span class="mx-2">•</span>
+                                    <span class="text-success">@pet.Color</span>
+                                </p>
+                            </div>
+                            
+                            <div class="price-section mb-3">
+                                @if (pet.SalePrice.HasValue)
+                                {
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-decoration-line-through text-muted me-2">@pet.Price.ToString("N0") ₫</span>
+                                        <span class="text-danger fw-bold fs-5">@pet.SalePrice.Value.ToString("N0") ₫</span>
+                                    </div>
+                                    <small class="text-success">
+                                        <i class="fas fa-arrow-down me-1"></i>
+                                        Tiết kiệm @((pet.Price - pet.SalePrice.Value).ToString("N0")) ₫
+                                    </small>
+                                }
+                                else
+                                {
+                                    <span class="text-primary fw-bold fs-5">@pet.Price.ToString("N0") ₫</span>
+                                }
+                            </div>
+                            
+                            @if (!string.IsNullOrEmpty(pet.Description))
+                            {
+                                <p class="card-text text-muted small mb-3">
+                                    @(pet.Description.Length > 80 ? pet.Description.Substring(0, 80) + "..." : pet.Description)
+                                </p>
+                            }
+                        </div>
+                        
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <div class="d-grid gap-2">
+                                <a asp-action="Details" asp-route-id="@pet.Id" class="btn btn-primary btn-lg rounded-pill">
+                                    <i class="fas fa-eye me-2"></i>Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        <!-- Pagination -->
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav aria-label="Pagination" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    @if (ViewBag.CurrentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link rounded-pill me-2" asp-action="Category" asp-route-id="@ViewBag.CategoryId" asp-route-page="@(ViewBag.CurrentPage - 1)">
+                                <i class="fas fa-chevron-left"></i> Trước
+                            </a>
+                        </li>
+                    }
+                    
+                    @for (int i = Math.Max(1, ViewBag.CurrentPage - 2); i <= Math.Min(ViewBag.TotalPages, ViewBag.CurrentPage + 2); i++)
+                    {
+                        <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                            <a class="page-link rounded-pill mx-1" asp-action="Category" asp-route-id="@ViewBag.CategoryId" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                    
+                    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                    {
+                        <li class="page-item">
+                            <a class="page-link rounded-pill ms-2" asp-action="Category" asp-route-id="@ViewBag.CategoryId" asp-route-page="@(ViewBag.CurrentPage + 1)">
+                                Sau <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    }
+    else
+    {
+        <!-- Empty State -->
+        <div class="text-center py-5">
+            <div class="empty-state">
+                <i class="fas fa-paw fa-5x text-muted mb-4"></i>
+                <h3 class="text-muted mb-3">Chưa có thú cưng nào trong danh mục này</h3>
+                <p class="text-muted mb-4">Hãy quay lại sau để xem những chú thú cưng đáng yêu khác!</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-primary btn-lg rounded-pill">
+                        <i class="fas fa-arrow-left me-2"></i>Xem tất cả thú cưng
+                    </a>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary btn-lg rounded-pill">
+                        <i class="fas fa-home me-2"></i>Về trang chủ
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+.pet-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.category-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.category-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: float 20s ease-in-out infinite;
+}
+
+@@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.empty-state i {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+</style>

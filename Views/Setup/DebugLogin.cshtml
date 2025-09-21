@@ -1,0 +1,104 @@
+@{
+    ViewData["Title"] = "Debug Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">
+                    <h4 class="mb-0">
+                        <i class="fas fa-bug me-2"></i>
+                        Debug Login Admin
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <form method="get">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" 
+                                           value="@(Context.Request.Query["email"].FirstOrDefault() ?? "admin@petshop.com")">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="text" class="form-control" id="password" name="password" 
+                                           value="@(Context.Request.Query["password"].FirstOrDefault() ?? "Admin123!")">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning">
+                            <i class="fas fa-search me-2"></i>
+                            Test Login
+                        </button>
+                    </form>
+
+                    @if (!string.IsNullOrEmpty(ViewBag.Result))
+                    {
+                        <hr>
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-info-circle me-2"></i>Kết quả kiểm tra:</h6>
+                            <pre>@ViewBag.Result</pre>
+                        </div>
+                    }
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <i class="fas fa-tools me-2"></i>
+                                        Các bước khắc phục
+                                    </h6>
+                                    <ol class="small">
+                                        <li>Kiểm tra thông tin user</li>
+                                        <li>Nếu Password Check = False, reset admin</li>
+                                        <li>Nếu Email Confirmed = False, cần xác nhận email</li>
+                                        <li>Nếu Is Active = False, kích hoạt user</li>
+                                        <li>Nếu Roles rỗng, thêm role Admin</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <i class="fas fa-link me-2"></i>
+                                        Liên kết hữu ích
+                                    </h6>
+                                    <div class="d-grid gap-2">
+                                        <a href="/Setup/TestAdmin" class="btn btn-sm btn-outline-info">Kiểm tra Admin</a>
+                                        <a href="/Setup/CreateAdmin" class="btn btn-sm btn-outline-primary">Tạo Admin mới</a>
+                                        <a href="/Identity/Account/Login" class="btn btn-sm btn-outline-success">Đăng nhập</a>
+                                        <a href="/Admin" class="btn btn-sm btn-outline-warning">Trang Admin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+</style>

@@ -1,0 +1,265 @@
+@model IEnumerable<PetShopWebsite.Models.Order>
+@{
+    ViewData["Title"] = "Đơn Hàng Của Tôi";
+}
+
+<div class="container my-5">
+    <!-- Orders Header -->
+    <div class="orders-header text-center mb-5 p-4 rounded-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="text-white">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="fas fa-receipt text-warning me-3"></i>Đơn Hàng Của Tôi
+            </h1>
+            <p class="lead mb-0">Theo dõi tình trạng đơn hàng và lịch sử mua hàng</p>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+                    <i class="fas fa-home me-1"></i>Trang chủ
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Đơn hàng của tôi</li>
+        </ol>
+    </nav>
+
+    @if (Model != null && Model.Any())
+    {
+        <!-- Orders List -->
+        <div class="orders-list">
+            @foreach (var order in Model)
+            {
+                <div class="order-card card mb-4 border-0 shadow-sm">
+                    <div class="card-header bg-light border-0 py-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h5 class="mb-0 fw-bold text-primary">
+                                    <i class="fas fa-hashtag me-2"></i>Đơn hàng #@order.Id
+                                </h5>
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")
+                                </small>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <span class="badge fs-6 px-3 py-2 rounded-pill 
+                                    @(order.Status == OrderStatus.Pending ? "bg-warning text-dark" :
+                                      order.Status == OrderStatus.Confirmed ? "bg-info" :
+                                      order.Status == OrderStatus.Processing ? "bg-primary" :
+                                      order.Status == OrderStatus.Shipping ? "bg-secondary" :
+                                      order.Status == OrderStatus.Delivered ? "bg-success" :
+                                      order.Status == OrderStatus.Cancelled ? "bg-danger" : "bg-secondary")">
+                                    <i class="fas fa-circle me-1" style="font-size: 0.6rem;"></i>
+                                    @(order.Status == OrderStatus.Pending ? "Chờ xác nhận" :
+                                      order.Status == OrderStatus.Confirmed ? "Đã xác nhận" :
+                                      order.Status == OrderStatus.Processing ? "Đang xử lý" :
+                                      order.Status == OrderStatus.Shipping ? "Đang giao hàng" :
+                                      order.Status == OrderStatus.Delivered ? "Đã giao hàng" :
+                                      order.Status == OrderStatus.Cancelled ? "Đã hủy" : "Không xác định")
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- Order Items Preview -->
+                                <div class="order-items-preview">
+                                    <h6 class="fw-semibold mb-3">
+                                        <i class="fas fa-paw me-2 text-primary"></i>Sản phẩm (@order.OrderDetails.Count() mục)
+                                    </h6>
+                                    <div class="row g-3">
+                                        @foreach (var item in order.OrderDetails.Take(3))
+                                        {
+                                            <div class="col-md-4">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@(item.Pet?.MainImageUrl ?? "/images/pets/default.jpg")" 
+                                                         alt="@item.Pet?.Name" 
+                                                         class="rounded me-3" 
+                                                         style="width: 50px; height: 50px; object-fit: cover;">
+                                                    <div>
+                                                        <div class="fw-semibold small">@item.Pet?.Name</div>
+                                                        <div class="text-muted small">SL: @item.Quantity</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                        @if (order.OrderDetails.Count() > 3)
+                                        {
+                                            <div class="col-md-4">
+                                                <div class="text-muted small">
+                                                    <i class="fas fa-plus-circle me-1"></i>
+                                                    và @(order.OrderDetails.Count() - 3) sản phẩm khác...
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                
+                                <!-- Customer Info -->
+                                <div class="customer-info mt-4">
+                                    <h6 class="fw-semibold mb-2">
+                                        <i class="fas fa-user me-2 text-primary"></i>Thông tin giao hàng
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="mb-1 small">
+                                                <strong>Tên:</strong> @order.ShippingName
+                                            </p>
+                                            <p class="mb-1 small">
+                                                <strong>SĐT:</strong> @order.ShippingPhone
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="mb-1 small">
+                                                <strong>Địa chỉ:</strong> @order.ShippingAddress
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <!-- Order Summary -->
+                                <div class="order-summary">
+                                    <h6 class="fw-semibold mb-3">
+                                        <i class="fas fa-calculator me-2 text-primary"></i>Tóm tắt đơn hàng
+                                    </h6>
+                                    <div class="summary-item d-flex justify-content-between mb-2">
+                                        <span class="small">Tạm tính:</span>
+                                        <span class="small">@order.SubTotal.ToString("N0") ₫</span>
+                                    </div>
+                                    <div class="summary-item d-flex justify-content-between mb-2">
+                                        <span class="small">Phí vận chuyển:</span>
+                                        <span class="small">@order.ShippingFee.ToString("N0") ₫</span>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="summary-item d-flex justify-content-between mb-3">
+                                        <span class="fw-bold">Tổng cộng:</span>
+                                        <span class="fw-bold text-primary">@order.TotalAmount.ToString("N0") ₫</span>
+                                    </div>
+                                    
+                                    <!-- Action Buttons -->
+                                    <div class="d-grid gap-2">
+                                        <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-outline-primary btn-sm">
+                                            <i class="fas fa-eye me-1"></i>Xem chi tiết
+                                        </a>
+                                        @if (order.Status == OrderStatus.Pending)
+                                        {
+                                            <button class="btn btn-outline-danger btn-sm cancel-order" data-order-id="@order.Id">
+                                                <i class="fas fa-times me-1"></i>Hủy đơn hàng
+                                            </button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Pagination -->
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav aria-label="Pagination" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    @if (ViewBag.CurrentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link rounded-pill me-2" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage - 1)">
+                                <i class="fas fa-chevron-left"></i> Trước
+                            </a>
+                        </li>
+                    }
+                    
+                    @for (int i = Math.Max(1, ViewBag.CurrentPage - 2); i <= Math.Min(ViewBag.TotalPages, ViewBag.CurrentPage + 2); i++)
+                    {
+                        <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                            <a class="page-link rounded-pill mx-1" asp-action="Index" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                    
+                    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                    {
+                        <li class="page-item">
+                            <a class="page-link rounded-pill ms-2" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage + 1)">
+                                Sau <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    }
+    else
+    {
+        <!-- Empty State -->
+        <div class="empty-orders text-center py-5">
+            <div class="empty-state">
+                <i class="fas fa-receipt fa-5x text-muted mb-4"></i>
+                <h3 class="text-muted mb-3">Bạn chưa có đơn hàng nào</h3>
+                <p class="text-muted mb-4">Hãy khám phá những chú thú cưng đáng yêu và đặt hàng ngay!</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-primary btn-lg rounded-pill">
+                        <i class="fas fa-paw me-2"></i>Xem thú cưng
+                    </a>
+                    <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-primary btn-lg rounded-pill">
+                        <i class="fas fa-shopping-cart me-2"></i>Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+.order-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 15px !important;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.empty-state i {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Cancel order functionality
+    document.querySelectorAll('.cancel-order').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const orderId = this.dataset.orderId;
+            
+            if (confirm('Bạn có chắc muốn hủy đơn hàng này?')) {
+                fetch(`/Orders/Cancel/${orderId}`, {
+                    method: 'POST',
+                    headers: {
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        location.reload();
+                    } else {
+                        alert(data.message || 'Có lỗi xảy ra');
+                    }
+                });
+            }
+        });
+    });
+});
+</script>

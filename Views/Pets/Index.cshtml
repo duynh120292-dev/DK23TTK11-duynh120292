@@ -1,0 +1,316 @@
+@model IEnumerable<PetShopWebsite.Models.Pet>
+@{
+    ViewData["Title"] = "Danh sách thú cưng";
+    var categories = ViewBag.Categories as List<PetShopWebsite.Models.Category>;
+    var currentCategoryId = ViewBag.CurrentCategoryId as int?;
+    var currentSearch = ViewBag.CurrentSearch as string;
+    var currentMinPrice = ViewBag.CurrentMinPrice as decimal?;
+    var currentMaxPrice = ViewBag.CurrentMaxPrice as decimal?;
+    var currentSortBy = ViewBag.CurrentSortBy as string;
+    var currentPage = ViewBag.CurrentPage as int? ?? 1;
+    var totalPages = ViewBag.TotalPages as int? ?? 1;
+    var totalItems = ViewBag.TotalItems as int? ?? 0;
+}
+
+@Html.AntiForgeryToken()
+
+<div class="container mt-4">
+    <!-- Page Header -->
+    <div class="row mb-4">
+        <div class="col">
+            <h2><i class="fas fa-paw"></i> Danh sách thú cưng</h2>
+            <p class="text-muted">Tìm kiếm người bạn hoàn hảo cho gia đình bạn</p>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <form method="get" asp-action="Index">
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <label class="form-label">Danh mục</label>
+                                <select name="categoryId" class="form-select">
+                                    <option value="">Tất cả danh mục</option>
+                                    @if (categories != null)
+                                    {
+                                        @foreach (var category in categories)
+                                        {
+                                            <option value="@category.Id" selected="@(currentCategoryId == category.Id)">
+                                                @category.Name
+                                            </option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Tìm kiếm</label>
+                                <input type="text" name="search" class="form-control" placeholder="Tên hoặc giống" value="@currentSearch">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Giá từ</label>
+                                <input type="number" name="minPrice" class="form-control" placeholder="0" value="@currentMinPrice">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Giá đến</label>
+                                <input type="number" name="maxPrice" class="form-control" placeholder="100000000" value="@currentMaxPrice">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Sắp xếp</label>
+                                <select name="sortBy" class="form-select">
+                                    <option value="" selected="@(string.IsNullOrEmpty(currentSortBy))">Mặc định</option>
+                                    <option value="price_asc" selected="@(currentSortBy == "price_asc")">Giá tăng dần</option>
+                                    <option value="price_desc" selected="@(currentSortBy == "price_desc")">Giá giảm dần</option>
+                                    <option value="name" selected="@(currentSortBy == "name")">Tên A-Z</option>
+                                    <option value="newest" selected="@(currentSortBy == "newest")">Mới nhất</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-search"></i> Tìm kiếm
+                                </button>
+                                <a asp-action="Index" class="btn btn-outline-secondary">
+                                    <i class="fas fa-redo"></i> Đặt lại
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Info -->
+    <div class="row mb-3">
+        <div class="col">
+            <p class="text-muted">
+                Hiển thị @Model.Count() trong tổng số @totalItems thú cưng
+                @if (!string.IsNullOrEmpty(currentSearch))
+                {
+                    <span>cho từ khóa "<strong>@currentSearch</strong>"</span>
+                }
+            </p>
+        </div>
+    </div>
+
+    <!-- Pet Grid -->
+    <div class="row">
+        @if (Model.Any())
+        {
+            @foreach (var pet in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 shadow-sm pet-card">
+                        <div class="position-relative">
+                            <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" class="card-img-top" alt="@pet.Name" style="height: 200px; object-fit: cover;">
+                            @if (pet.SalePrice.HasValue)
+                            {
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+                                    Giảm @(Math.Round((1 - pet.SalePrice.Value / pet.Price) * 100))%
+                                </span>
+                            }
+                            @if (pet.IsFeatured)
+                            {
+                                <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                                    <i class="fas fa-star"></i> Nổi bật
+                                </span>
+                            }
+                            @if (pet.StockQuantity <= 0)
+                            {
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <span class="badge bg-secondary fs-6">Hết hàng</span>
+                                </div>
+                            }
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">@pet.Name</h6>
+                            <p class="text-muted small mb-2">
+                                <i class="fas fa-tag"></i> @pet.Category.Name - @pet.Breed
+                            </p>
+                            <p class="text-muted small mb-2">
+                                <i class="fas fa-birthday-cake"></i> @pet.Age tháng tuổi
+                                <span class="ms-2">
+                                    <i class="fas fa-weight"></i> @pet.Weight kg
+                                </span>
+                            </p>
+                            <p class="text-muted small mb-2">
+                                <i class="fas fa-palette"></i> @pet.Color
+                                <span class="ms-2">
+                                    <i class="fas fa-venus-mars"></i> @pet.Gender
+                                </span>
+                            </p>
+                            @if (pet.IsVaccinated || pet.IsDewormed)
+                            {
+                                <div class="mb-2">
+                                    @if (pet.IsVaccinated)
+                                    {
+                                        <span class="badge bg-success me-1">
+                                            <i class="fas fa-syringe"></i> Đã tiêm phòng
+                                        </span>
+                                    }
+                                    @if (pet.IsDewormed)
+                                    {
+                                        <span class="badge bg-info">
+                                            <i class="fas fa-shield-virus"></i> Đã tẩy giun
+                                        </span>
+                                    }
+                                </div>
+                            }
+                            <div class="price-section">
+                                @if (pet.SalePrice.HasValue)
+                                {
+                                    <span class="text-decoration-line-through text-muted">@pet.Price.ToString("N0") ₫</span>
+                                    <span class="text-danger fw-bold d-block">@pet.SalePrice.Value.ToString("N0") ₫</span>
+                                }
+                                else
+                                {
+                                    <span class="text-primary fw-bold">@pet.Price.ToString("N0") ₫</span>
+                                }
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-grid gap-2">
+                                <a asp-action="Details" asp-route-id="@pet.Id" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i> Xem chi tiết
+                                </a>
+                                @if (pet.StockQuantity > 0)
+                                {
+                                    <button type="button" class="btn btn-outline-success btn-sm" onclick="addToCart(@pet.Id)">
+                                        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12">
+                <div class="text-center py-5">
+                    <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                    <h4>Không tìm thấy thú cưng nào</h4>
+                    <p class="text-muted">Hãy thử thay đổi bộ lọc hoặc từ khóa tìm kiếm</p>
+                    <a asp-action="Index" class="btn btn-primary">
+                        <i class="fas fa-redo"></i> Xem tất cả thú cưng
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Pagination -->
+    @if (totalPages > 1)
+    {
+        <div class="row mt-4">
+            <div class="col">
+                <nav aria-label="Phân trang">
+                    <ul class="pagination justify-content-center">
+                        @if (currentPage > 1)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-action="Index" asp-route-page="@(currentPage - 1)" asp-route-categoryId="@currentCategoryId" asp-route-search="@currentSearch" asp-route-minPrice="@currentMinPrice" asp-route-maxPrice="@currentMaxPrice" asp-route-sortBy="@currentSortBy">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                        }
+
+                        @for (int i = Math.Max(1, currentPage - 2); i <= Math.Min(totalPages, currentPage + 2); i++)
+                        {
+                            <li class="page-item @(i == currentPage ? "active" : "")">
+                                <a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-categoryId="@currentCategoryId" asp-route-search="@currentSearch" asp-route-minPrice="@currentMinPrice" asp-route-maxPrice="@currentMaxPrice" asp-route-sortBy="@currentSortBy">
+                                    @i
+                                </a>
+                            </li>
+                        }
+
+                        @if (currentPage < totalPages)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-action="Index" asp-route-page="@(currentPage + 1)" asp-route-categoryId="@currentCategoryId" asp-route-search="@currentSearch" asp-route-minPrice="@currentMinPrice" asp-route-maxPrice="@currentMaxPrice" asp-route-sortBy="@currentSortBy">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+.pet-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.price-section {
+    font-size: 1.1em;
+}
+</style>
+
+<script>
+function addToCart(petId) {
+    $.ajax({
+        url: '@Url.Action("AddToCart", "Cart")',
+        type: 'POST',
+        data: {
+            petId: petId,
+            quantity: 1,
+            __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+        },
+        success: function(response) {
+            if (response.success) {
+                showToast('success', response.message);
+                if (response.cartCount) {
+                    $('#cartCount').text(response.cartCount).show();
+                }
+                if (typeof loadCartCount === 'function') {
+                    loadCartCount();
+                }
+            } else {
+                showToast('error', response.message);
+            }
+        },
+        error: function() {
+            showToast('error', 'Có lỗi xảy ra. Vui lòng thử lại!');
+        }
+    });
+}
+
+function showToast(type, message) {
+    const toastHtml = `
+        <div class="toast align-items-center text-white bg-${type === 'success' ? 'success' : 'danger'} border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    ${message}
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    `;
+    
+    let toastContainer = document.querySelector('.toast-container');
+    if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.className = 'toast-container position-fixed top-0 end-0 p-3';
+        document.body.appendChild(toastContainer);
+    }
+    
+    toastContainer.insertAdjacentHTML('beforeend', toastHtml);
+    
+    const toastElement = toastContainer.lastElementChild;
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
+    
+    toastElement.addEventListener('hidden.bs.toast', () => {
+        toastElement.remove();
+    });
+}
+</script>

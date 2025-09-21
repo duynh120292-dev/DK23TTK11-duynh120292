@@ -1,0 +1,218 @@
+@model PetShopWebsite.Controllers.CheckoutViewModel
+@{
+    ViewData["Title"] = "Thanh Toán";
+}
+
+<div class="container my-5">
+    <!-- Checkout Header -->
+    <div class="checkout-header text-center mb-5 p-4 rounded-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="text-white">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="fas fa-credit-card text-warning me-3"></i>Thanh Toán
+            </h1>
+            <p class="lead mb-0">Hoàn tất đơn hàng của bạn</p>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+                    <i class="fas fa-home me-1"></i>Trang chủ
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a asp-controller="Cart" asp-action="Index" class="text-decoration-none">
+                    <i class="fas fa-shopping-cart me-1"></i>Giỏ hàng
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+        </ol>
+    </nav>
+
+    <form asp-action="Checkout" method="post" class="checkout-form">
+        <div class="row">
+            <!-- Customer Information -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h5 class="mb-0 fw-bold">
+                            <i class="fas fa-user me-2"></i>Thông Tin Khách Hàng
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="CustomerName" class="form-label fw-semibold">Họ và tên *</label>
+                                <input asp-for="CustomerName" class="form-control form-control-lg" placeholder="Nhập họ và tên">
+                                <span asp-validation-for="CustomerName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="CustomerPhone" class="form-label fw-semibold">Số điện thoại *</label>
+                                <input asp-for="CustomerPhone" class="form-control form-control-lg" placeholder="Nhập số điện thoại">
+                                <span asp-validation-for="CustomerPhone" class="text-danger"></span>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="CustomerEmail" class="form-label fw-semibold">Email *</label>
+                                <input asp-for="CustomerEmail" type="email" class="form-control form-control-lg" placeholder="Nhập địa chỉ email">
+                                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="CustomerAddress" class="form-label fw-semibold">Địa chỉ giao hàng *</label>
+                                <textarea asp-for="CustomerAddress" class="form-control" rows="3" placeholder="Nhập địa chỉ chi tiết"></textarea>
+                                <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-success text-white py-3">
+                        <h5 class="mb-0 fw-bold">
+                            <i class="fas fa-credit-card me-2"></i>Phương Thức Thanh Toán
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="payment-methods">
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="PaymentMethod" id="cod" value="COD" checked>
+                                <label class="form-check-label fw-semibold" for="cod">
+                                    <i class="fas fa-money-bill-wave text-success me-2"></i>
+                                    Thanh toán khi nhận hàng (COD)
+                                </label>
+                                <div class="text-muted small mt-1">Thanh toán bằng tiền mặt khi nhận thú cưng</div>
+                            </div>
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="PaymentMethod" id="bank" value="Bank Transfer">
+                                <label class="form-check-label fw-semibold" for="bank">
+                                    <i class="fas fa-university text-primary me-2"></i>
+                                    Chuyển khoản ngân hàng
+                                </label>
+                                <div class="text-muted small mt-1">Chuyển khoản trước, giao hàng sau xác nhận</div>
+                            </div>
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="PaymentMethod" id="momo" value="MoMo">
+                                <label class="form-check-label fw-semibold" for="momo">
+                                    <i class="fas fa-mobile-alt text-danger me-2"></i>
+                                    Ví điện tử MoMo
+                                </label>
+                                <div class="text-muted small mt-1">Thanh toán qua ví MoMo</div>
+                            </div>
+                        </div>
+                        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Notes -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-info text-white py-3">
+                        <h5 class="mb-0 fw-bold">
+                            <i class="fas fa-sticky-note me-2"></i>Ghi Chú
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <textarea asp-for="Notes" class="form-control" rows="3" placeholder="Ghi chú thêm cho đơn hàng (không bắt buộc)"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-lg sticky-top" style="top: 100px;">
+                    <div class="card-header bg-warning text-dark py-3">
+                        <h5 class="mb-0 fw-bold">
+                            <i class="fas fa-receipt me-2"></i>Đơn Hàng Của Bạn
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- Cart Items -->
+                        <div class="order-items mb-4">
+                            @foreach (var item in Model.CartItems)
+                            {
+                                <div class="order-item d-flex align-items-center mb-3 pb-3 border-bottom">
+                                    <img src="@(item.Pet?.MainImageUrl ?? "/images/pets/default.jpg")" 
+                                         alt="@item.Pet?.Name" 
+                                         class="rounded me-3" 
+                                         style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-semibold">@item.Pet?.Name</h6>
+                                        <div class="text-muted small">
+                                            @item.Pet?.Category?.Name • SL: @item.Quantity
+                                        </div>
+                                        <div class="text-primary fw-semibold">
+                                            @((item.UnitPrice * item.Quantity).ToString("N0")) ₫
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div class="order-summary">
+                            <div class="summary-row d-flex justify-content-between mb-2">
+                                <span>Tạm tính:</span>
+                                <span class="fw-semibold">@Model.SubTotal.ToString("N0") ₫</span>
+                            </div>
+                            <div class="summary-row d-flex justify-content-between mb-2">
+                                <span>Phí vận chuyển:</span>
+                                <span class="text-success">Miễn phí</span>
+                            </div>
+                            <div class="summary-row d-flex justify-content-between mb-3">
+                                <span>Thuế VAT (10%):</span>
+                                <span>@Model.TaxAmount.ToString("N0") ₫</span>
+                            </div>
+                            <hr>
+                            <div class="summary-row d-flex justify-content-between mb-4">
+                                <span class="fw-bold fs-5">Tổng cộng:</span>
+                                <span class="fw-bold fs-5 text-primary">@Model.TotalAmount.ToString("N0") ₫</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                                <i class="fas fa-check me-2"></i>Đặt Hàng
+                            </button>
+                            <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-secondary rounded-pill">
+                                <i class="fas fa-arrow-left me-2"></i>Quay lại giỏ hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+.checkout-form .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.payment-methods .form-check {
+    transition: all 0.2s ease;
+}
+
+.payment-methods .form-check:hover {
+    background-color: #f8f9fa;
+}
+
+.payment-methods .form-check-input:checked + .form-check-label {
+    color: #667eea;
+}
+
+.order-item {
+    transition: transform 0.2s ease;
+}
+
+.order-item:hover {
+    transform: translateX(5px);
+}
+</style>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

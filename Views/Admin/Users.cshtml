@@ -1,0 +1,375 @@
+@model List<PetShopWebsite.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "Quản Lý Người Dùng";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Quản Lý Người Dùng</h1>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#addUserModal">
+        <i class="fas fa-plus"></i> Thêm Người Dùng
+    </a>
+</div>
+
+<!-- Search Form -->
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <form method="get" class="row">
+            <div class="col-md-6">
+                <input type="text" name="search" class="form-control" placeholder="Tìm kiếm theo tên, email, số điện thoại..." value="@ViewBag.Search">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Tìm kiếm
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Danh Sách Người Dùng</h6>
+    </div>
+    <div class="card-body">
+        @if (Model.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Họ Tên</th>
+                            <th>Email</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Địa Chỉ</th>
+                            <th>Ngày Sinh</th>
+                            <th>Trạng Thái</th>
+                            <th>Ngày Tạo</th>
+                            <th>Thao Tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-circle bg-primary text-white mr-2">
+                                            @{
+                                                string displayName = user.FullName ?? user.Email ?? user.UserName ?? "U";
+                                                string firstChar = !string.IsNullOrEmpty(displayName) ? displayName.Substring(0, 1).ToUpper() : "U";
+                                            }
+                                            @firstChar
+                                        </div>
+                                        <div>
+                                            <strong>@(user.FullName ?? user.Email ?? user.UserName ?? "Người dùng")</strong><br>
+                                            <small class="text-muted">@(user.UserName ?? "N/A")</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>@user.Email</td>
+                                <td>@(user.PhoneNumber ?? "Chưa cập nhật")</td>
+                                <td>@(user.Address ?? "Chưa cập nhật")</td>
+                                <td>
+                                    @if (user.DateOfBirth != default(DateTime))
+                                    {
+                                        @user.DateOfBirth.ToString("dd/MM/yyyy")
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Chưa cập nhật</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (user.IsActive)
+                                    {
+                                        <span class="badge badge-success">Hoạt động</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge badge-secondary">Không hoạt động</span>
+                                    }
+                                </td>
+                                <td>@user.CreatedAt.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="viewUserDetails('@user.Id')">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-warning" onclick="editUser('@user.Id')">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        @if (user.IsActive)
+                                        {
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="deactivateUser('@user.Id')">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" class="btn btn-sm btn-outline-success" onclick="activateUser('@user.Id')">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                        }
+                                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="deleteUser('@user.Id')">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            @if (ViewBag.TotalPages > 1)
+            {
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="@Url.Action("Users", new { page = i, search = ViewBag.Search })">@i</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="fas fa-users fa-3x text-muted mb-3"></i>
+                <h5 class="text-muted">Không tìm thấy người dùng nào</h5>
+                <p class="text-muted">Thử thay đổi từ khóa tìm kiếm.</p>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Add User Modal -->
+<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thêm Người Dùng Mới</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <form id="addUserForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="userFullName">Họ Tên *</label>
+                        <input type="text" class="form-control" id="userFullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email *</label>
+                        <input type="email" class="form-control" id="userEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPassword">Mật Khẩu *</label>
+                        <input type="password" class="form-control" id="userPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPhone">Số Điện Thoại</label>
+                        <input type="tel" class="form-control" id="userPhone">
+                    </div>
+                    <div class="form-group">
+                        <label for="userAddress">Địa Chỉ</label>
+                        <textarea class="form-control" id="userAddress" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="userDateOfBirth">Ngày Sinh</label>
+                        <input type="date" class="form-control" id="userDateOfBirth">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="userIsActive" checked>
+                        <label class="form-check-label" for="userIsActive">
+                            Hoạt động
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Thêm Người Dùng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit User Modal -->
+<div class="modal fade" id="editUserModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Chỉnh Sửa Người Dùng</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <form id="editUserForm">
+                <input type="hidden" id="editUserId">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="editUserFullName">Họ Tên *</label>
+                        <input type="text" class="form-control" id="editUserFullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editUserEmail">Email *</label>
+                        <input type="email" class="form-control" id="editUserEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editUserPhone">Số Điện Thoại</label>
+                        <input type="tel" class="form-control" id="editUserPhone">
+                    </div>
+                    <div class="form-group">
+                        <label for="editUserAddress">Địa Chỉ</label>
+                        <textarea class="form-control" id="editUserAddress" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="editUserDateOfBirth">Ngày Sinh</label>
+                        <input type="date" class="form-control" id="editUserDateOfBirth">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="editUserIsActive">
+                        <label class="form-check-label" for="editUserIsActive">
+                            Hoạt động
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- User Details Modal -->
+<div class="modal fade" id="userDetailsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Chi Tiết Người Dùng</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="userDetailsContent">
+                <!-- User details will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function viewUserDetails(userId) {
+            $('#userDetailsContent').html('<div class="text-center"><i class="fas fa-spinner fa-spin"></i> Đang tải...</div>');
+            $('#userDetailsModal').modal('show');
+            
+            // TODO: Load user details via AJAX
+            setTimeout(function() {
+                $('#userDetailsContent').html('<p>Chi tiết người dùng ' + userId + ' sẽ được hiển thị ở đây.</p>');
+            }, 1000);
+        }
+
+        function editUser(userId) {
+            $.get('/Admin/GetUser/' + userId, function(user) {
+                $('#editUserId').val(user.id);
+                $('#editUserFullName').val(user.fullName);
+                $('#editUserEmail').val(user.email);
+                $('#editUserPhone').val(user.phoneNumber);
+                $('#editUserAddress').val(user.address);
+                $('#editUserDateOfBirth').val(user.dateOfBirth ? user.dateOfBirth.split('T')[0] : '');
+                $('#editUserIsActive').prop('checked', user.isActive);
+                $('#editUserModal').modal('show');
+            }).fail(function() {
+                alert('Không thể tải thông tin người dùng');
+            });
+        }
+
+        function activateUser(userId) {
+            if (confirm('Bạn có chắc chắn muốn kích hoạt người dùng này?')) {
+                $.post('/Admin/ToggleUserStatus', { userId: userId, isActive: true })
+                .done(function() {
+                    location.reload();
+                })
+                .fail(function() {
+                    alert('Có lỗi xảy ra');
+                });
+            }
+        }
+
+        function deactivateUser(userId) {
+            if (confirm('Bạn có chắc chắn muốn vô hiệu hóa người dùng này?')) {
+                $.post('/Admin/ToggleUserStatus', { userId: userId, isActive: false })
+                .done(function() {
+                    location.reload();
+                })
+                .fail(function() {
+                    alert('Có lỗi xảy ra');
+                });
+            }
+        }
+
+        function deleteUser(userId) {
+            if (confirm('Bạn có chắc chắn muốn xóa người dùng này? Hành động này không thể hoàn tác!')) {
+                $.post('/Admin/DeleteUser', { userId: userId })
+                .done(function() {
+                    location.reload();
+                })
+                .fail(function() {
+                    alert('Có lỗi xảy ra');
+                });
+            }
+        }
+
+        $('#addUserForm').on('submit', function(e) {
+            e.preventDefault();
+            // TODO: Implement add user functionality
+            alert('Chức năng thêm người dùng sẽ được triển khai sau');
+        });
+
+        $('#editUserForm').on('submit', function(e) {
+            e.preventDefault();
+            var userData = {
+                id: $('#editUserId').val(),
+                fullName: $('#editUserFullName').val(),
+                email: $('#editUserEmail').val(),
+                phoneNumber: $('#editUserPhone').val(),
+                address: $('#editUserAddress').val(),
+                dateOfBirth: $('#editUserDateOfBirth').val(),
+                isActive: $('#editUserIsActive').is(':checked')
+            };
+            
+            $.post('/Admin/UpdateUser', userData)
+            .done(function() {
+                $('#editUserModal').modal('hide');
+                location.reload();
+            })
+            .fail(function() {
+                alert('Có lỗi xảy ra khi cập nhật');
+            });
+        });
+    </script>
+
+    <style>
+        .avatar-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+}

@@ -1,0 +1,123 @@
+@{
+    ViewData["Title"] = "Force Create Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        Force Create Admin (Emergency)
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(ViewBag.Success))
+                    {
+                        <div class="alert alert-success">
+                            <h5><i class="fas fa-check-circle me-2"></i>Thành công!</h5>
+                            <pre>@ViewBag.Success</pre>
+                            
+                            <div class="mt-3">
+                                <a href="/Identity/Account/Login" class="btn btn-primary me-2">
+                                    <i class="fas fa-sign-in-alt me-2"></i>
+                                    Đăng nhập ngay
+                                </a>
+                                <a href="/Admin" class="btn btn-success">
+                                    <i class="fas fa-tachometer-alt me-2"></i>
+                                    Trang Admin
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    else if (!string.IsNullOrEmpty(ViewBag.Error))
+                    {
+                        <div class="alert alert-danger">
+                            <h5><i class="fas fa-times-circle me-2"></i>Lỗi!</h5>
+                            <pre>@ViewBag.Error</pre>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning">
+                            <h5><i class="fas fa-exclamation-triangle me-2"></i>Cảnh báo!</h5>
+                            <p>Chức năng này sẽ:</p>
+                            <ul>
+                                <li><strong>XÓA TẤT CẢ</strong> tài khoản người dùng hiện có</li>
+                                <li>Tạo lại tài khoản admin mới</li>
+                                <li>Sử dụng mật khẩu đơn giản: <code>123456</code></li>
+                            </ul>
+                            <p class="text-danger"><strong>Chỉ sử dụng khi thực sự cần thiết!</strong></p>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="?confirm=true" class="btn btn-danger btn-lg">
+                                <i class="fas fa-bomb me-2"></i>
+                                XÁC NHẬN - Tạo Admin Mới
+                            </a>
+                        </div>
+                    }
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        Thông tin đăng nhập mới
+                                    </h6>
+                                    <p class="card-text">
+                                        <strong>Email:</strong> admin@petshop.com<br>
+                                        <strong>Mật khẩu:</strong> 123456<br>
+                                        <small class="text-muted">(Hoặc Admin123! nếu 123456 không được)</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <i class="fas fa-tools me-2"></i>
+                                        Các tool khác
+                                    </h6>
+                                    <div class="d-grid gap-2">
+                                        <a href="/Setup/DebugLogin" class="btn btn-sm btn-outline-warning">Debug Login</a>
+                                        <a href="/Setup/TestAdmin" class="btn btn-sm btn-outline-info">Test Admin</a>
+                                        <a href="/Setup/CreateAdmin" class="btn btn-sm btn-outline-primary">Create Admin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    pre {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        white-space: pre-wrap;
+    }
+    
+    .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+    
+    code {
+        background-color: #f8f9fa;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-size: 0.9rem;
+    }
+</style>

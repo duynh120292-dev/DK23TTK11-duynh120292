@@ -1,0 +1,197 @@
+@model IEnumerable<PetShopWebsite.Models.Category>
+@{
+    ViewData["Title"] = "Danh Mục Thú Cưng";
+}
+
+<div class="container my-5">
+    <!-- Categories Header -->
+    <div class="categories-header text-center mb-5 p-4 rounded-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="text-white">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="fas fa-heart text-warning me-3"></i>Danh Mục Thú Cưng
+            </h1>
+            <p class="lead mb-0">Khám phá thế giới đa dạng của những người bạn bốn chân</p>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+                    <i class="fas fa-home me-1"></i>Trang chủ
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Danh mục thú cưng</li>
+        </ol>
+    </nav>
+
+    @if (Model != null && Model.Any())
+    {
+        <!-- Categories Grid -->
+        <div class="row g-4">
+            @foreach (var category in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="category-icon mb-3">
+                                    <img src="@(category.ImageUrl ?? "/images/categories/default.jpg")" 
+                                         alt="@category.Name" 
+                                         class="img-fluid rounded-circle" 
+                                         style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <h4 class="fw-bold text-primary mb-2">@category.Name</h4>
+                                @if (!string.IsNullOrEmpty(category.Description))
+                                {
+                                    <p class="text-muted mb-3">@category.Description</p>
+                                }
+                                <div class="category-stats mb-3">
+                                    <span class="badge bg-primary px-3 py-2 rounded-pill">
+                                        <i class="fas fa-paw me-2"></i>@category.PetCount thú cưng
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a asp-controller="Pets" asp-action="Category" asp-route-id="@category.Id" 
+                                   class="btn btn-primary btn-lg rounded-pill">
+                                    <i class="fas fa-eye me-2"></i>Xem thú cưng
+                                </a>
+                                <a asp-action="Details" asp-route-id="@category.Id" 
+                                   class="btn btn-outline-primary rounded-pill">
+                                    <i class="fas fa-info-circle me-2"></i>Chi tiết danh mục
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Category Features -->
+                        <div class="card-footer bg-light border-0 p-3">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="feature-item">
+                                        <i class="fas fa-shield-alt text-success mb-1"></i>
+                                        <small class="d-block text-muted">Đã tiêm phòng</small>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feature-item">
+                                        <i class="fas fa-heart text-danger mb-1"></i>
+                                        <small class="d-block text-muted">Khỏe mạnh</small>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feature-item">
+                                        <i class="fas fa-certificate text-warning mb-1"></i>
+                                        <small class="d-block text-muted">Có giấy tờ</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions mt-5 p-4 bg-light rounded-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h5 class="fw-bold mb-2">
+                        <i class="fas fa-lightbulb text-warning me-2"></i>Không tìm thấy thú cưng phù hợp?
+                    </h5>
+                    <p class="text-muted mb-0">Hãy liên hệ với chúng tôi để được tư vấn và tìm kiếm thú cưng theo yêu cầu của bạn!</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="tel:+84123456789" class="btn btn-success btn-lg rounded-pill me-2">
+                        <i class="fas fa-phone me-2"></i>Gọi ngay
+                    </a>
+                    <a asp-controller="Home" asp-action="About" class="btn btn-outline-primary btn-lg rounded-pill">
+                        <i class="fas fa-info-circle me-2"></i>Tìm hiểu thêm
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Empty State -->
+        <div class="empty-categories text-center py-5">
+            <div class="empty-state">
+                <i class="fas fa-heart-broken fa-5x text-muted mb-4"></i>
+                <h3 class="text-muted mb-3">Chưa có danh mục nào</h3>
+                <p class="text-muted mb-4">Hiện tại chúng tôi đang cập nhật các danh mục thú cưng. Vui lòng quay lại sau!</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-primary btn-lg rounded-pill">
+                        <i class="fas fa-home me-2"></i>Về trang chủ
+                    </a>
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-outline-primary btn-lg rounded-pill">
+                        <i class="fas fa-paw me-2"></i>Xem tất cả thú cưng
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px !important;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.category-icon img {
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon img {
+    transform: scale(1.1);
+}
+
+.feature-item {
+    transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-2px);
+}
+
+.feature-item i {
+    font-size: 1.2rem;
+}
+
+.quick-actions {
+    background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%) !important;
+}
+
+.empty-state i {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@@media (max-width: 768px) {
+    .category-card {
+        margin-bottom: 2rem;
+    }
+    
+    .quick-actions .col-md-4 {
+        text-align: center !important;
+        margin-top: 1rem;
+    }
+    
+    .quick-actions .btn {
+        margin-bottom: 0.5rem;
+    }
+}
+</style>

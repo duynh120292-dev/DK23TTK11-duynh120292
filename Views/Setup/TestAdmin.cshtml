@@ -1,0 +1,168 @@
+@{
+    ViewData["Title"] = "Kiểm Tra Tài Khoản Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-search me-2"></i>
+                        Kiểm Tra Tài Khoản Admin
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(ViewBag.Success))
+                    {
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>
+                            @ViewBag.Success
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(ViewBag.Error))
+                    {
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                    @if (ViewBag.AdminUsers != null && ((List<object>)ViewBag.AdminUsers).Any())
+                    {
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Tìm thấy @(((List<object>)ViewBag.AdminUsers).Count) tài khoản admin
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Email</th>
+                                        <th>Tên đầy đủ</th>
+                                        <th>Trạng thái</th>
+                                        <th>Email xác nhận</th>
+                                        <th>Ngày tạo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (dynamic admin in (List<object>)ViewBag.AdminUsers)
+                                    {
+                                        <tr>
+                                            <td>@admin.Email</td>
+                                            <td>@admin.FullName</td>
+                                            <td>
+                                                @if (admin.IsActive)
+                                                {
+                                                    <span class="badge bg-success">Hoạt động</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-danger">Không hoạt động</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                @if (admin.EmailConfirmed)
+                                                {
+                                                    <span class="badge bg-success">Đã xác nhận</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-warning">Chưa xác nhận</span>
+                                                }
+                                            </td>
+                                            <td>@admin.CreatedAt</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="/Admin" class="btn btn-primary me-2">
+                                <i class="fas fa-tachometer-alt me-2"></i>
+                                Đi đến trang Admin
+                            </a>
+                            <form method="post" asp-action="ResetAdmin" class="d-inline">
+                                <button type="submit" class="btn btn-warning" onclick="return confirm('Bạn có chắc muốn reset tài khoản admin? Điều này sẽ xóa tài khoản hiện tại và tạo lại.')">
+                                    <i class="fas fa-redo me-2"></i>
+                                    Reset Admin
+                                </button>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Không tìm thấy tài khoản admin nào
+                        </div>
+
+                        <div class="text-center">
+                            <a href="/Setup/CreateAdmin" class="btn btn-primary">
+                                <i class="fas fa-user-plus me-2"></i>
+                                Tạo Tài Khoản Admin
+                            </a>
+                        </div>
+                    }
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <i class="fas fa-key me-2"></i>
+                                        Thông tin đăng nhập mặc định
+                                    </h6>
+                                    <p class="card-text">
+                                        <strong>Email:</strong> admin@petshop.com<br>
+                                        <strong>Mật khẩu:</strong> Admin123!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <i class="fas fa-link me-2"></i>
+                                        Liên kết hữu ích
+                                    </h6>
+                                    <p class="card-text">
+                                        <a href="/Admin" class="btn btn-sm btn-outline-primary">Trang Admin</a><br>
+                                        <a href="/Identity/Account/Login" class="btn btn-sm btn-outline-secondary mt-1">Đăng nhập</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+    
+    .card-header {
+        border-bottom: none;
+    }
+    
+    .table th {
+        background-color: #f8f9fa;
+        border-top: none;
+    }
+    
+    .badge {
+        font-size: 0.75rem;
+    }
+</style>

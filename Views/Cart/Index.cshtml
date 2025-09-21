@@ -1,0 +1,279 @@
+@model PetShopWebsite.ViewModels.CartViewModel
+@{
+    ViewData["Title"] = "Giỏ Hàng";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="container my-5">
+    <!-- Cart Header -->
+    <div class="cart-header text-center mb-5 p-4 rounded-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="text-white">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="fas fa-shopping-cart text-warning me-3"></i>Giỏ Hàng Của Bạn
+            </h1>
+            <p class="lead mb-0">Những chú thú cưng bạn đã chọn</p>
+        </div>
+    </div>
+
+    @if (Model?.Items != null && Model.Items.Any())
+    {
+        <div class="row">
+            <!-- Cart Items -->
+            <div class="col-lg-8">
+                <div class="cart-items">
+                    @foreach (var item in Model.Items)
+                    {
+                        <div class="cart-item card mb-4 border-0 shadow-sm" data-item-id="@item.Id">
+                            <div class="card-body p-4">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <div class="pet-image">
+                                            <img src="@(item.Pet?.MainImageUrl ?? "/images/pets/default.jpg")" 
+                                                 alt="@item.Pet?.Name" 
+                                                 class="img-fluid rounded-3" 
+                                                 style="height: 120px; width: 100%; object-fit: cover;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="pet-info">
+                                            <h5 class="fw-bold text-primary mb-2">@item.Pet?.Name</h5>
+                                            <p class="text-muted mb-2">
+                                                <i class="fas fa-tag me-2"></i>@item.Pet?.Category?.Name
+                                                <span class="mx-2">•</span>
+                                                <span>@item.Pet?.Breed</span>
+                                            </p>
+                                            <p class="text-muted mb-2">
+                                                <i class="fas fa-birthday-cake me-2"></i>@item.Pet?.Age tháng tuổi
+                                                <span class="mx-2">•</span>
+                                                <i class="fas fa-weight me-1"></i>@item.Pet?.Weight kg
+                                            </p>
+                                            <div class="pet-badges">
+                                                @if (item.Pet?.IsVaccinated == true)
+                                                {
+                                                    <span class="badge bg-success me-1">
+                                                        <i class="fas fa-shield-alt me-1"></i>Đã tiêm phòng
+                                                    </span>
+                                                }
+                                                @if (item.Pet?.IsDewormed == true)
+                                                {
+                                                    <span class="badge bg-info">
+                                                        <i class="fas fa-heart me-1"></i>Đã tẩy giun
+                                                    </span>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="item-controls text-end">
+                                            <div class="price-section mb-3">
+                                                <div class="unit-price text-primary fw-bold fs-5">
+                                                    @item.UnitPrice.ToString("N0") ₫
+                                                </div>
+                                                @if (item.Pet?.SalePrice.HasValue == true && item.Pet.SalePrice < item.Pet.Price)
+                                                {
+                                                    <small class="text-muted text-decoration-line-through">
+                                                        @item.Pet.Price.ToString("N0") ₫
+                                                    </small>
+                                                }
+                                            </div>
+                                            
+                                            <div class="quantity-controls mb-3">
+                                                <div class="input-group input-group-sm" style="max-width: 120px;">
+                                                    <button class="btn btn-outline-secondary quantity-btn" type="button" data-action="decrease" data-item-id="@item.Id">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <input type="number" class="form-control text-center quantity-input" 
+                                                           value="@item.Quantity" min="1" max="@item.Pet?.StockQuantity" 
+                                                           data-item-id="@item.Id" readonly>
+                                                    <button class="btn btn-outline-secondary quantity-btn" type="button" data-action="increase" data-item-id="@item.Id">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="total-price fw-bold text-success mb-3">
+                                                Tổng: <span class="item-total">@((item.UnitPrice * item.Quantity).ToString("N0"))</span> ₫
+                                            </div>
+                                            
+                                            <button class="btn btn-outline-danger btn-sm remove-item" data-item-id="@item.Id">
+                                                <i class="fas fa-trash me-1"></i>Xóa
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="col-lg-4">
+                <div class="cart-summary card border-0 shadow-lg sticky-top" style="top: 100px;">
+                    <div class="card-header bg-primary text-white text-center py-3">
+                        <h5 class="mb-0 fw-bold">
+                            <i class="fas fa-calculator me-2"></i>Tóm Tắt Đơn Hàng
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="summary-row d-flex justify-content-between mb-3">
+                            <span>Tạm tính:</span>
+                            <span class="fw-semibold subtotal">@Model.SubTotal.ToString("N0") ₫</span>
+                        </div>
+                        <div class="summary-row d-flex justify-content-between mb-3">
+                            <span>Phí vận chuyển:</span>
+                            <span class="text-success">Miễn phí</span>
+                        </div>
+                        <div class="summary-row d-flex justify-content-between mb-3">
+                            <span>Phí vận chuyển:</span>
+                            <span class="tax">@Model.ShippingFee.ToString("N0") ₫</span>
+                        </div>
+                        <hr>
+                        <div class="summary-row d-flex justify-content-between mb-4">
+                            <span class="fw-bold fs-5">Tổng cộng:</span>
+                            <span class="fw-bold fs-5 text-primary total">@Model.TotalAmount.ToString("N0") ₫</span>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <a asp-controller="Orders" asp-action="Checkout" class="btn btn-primary btn-lg rounded-pill">
+                                <i class="fas fa-credit-card me-2"></i>Thanh Toán
+                            </a>
+                            <a asp-controller="Pets" asp-action="Index" class="btn btn-outline-primary rounded-pill">
+                                <i class="fas fa-arrow-left me-2"></i>Tiếp tục mua sắm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Empty Cart -->
+        <div class="empty-cart text-center py-5">
+            <div class="empty-state">
+                <i class="fas fa-shopping-cart fa-5x text-muted mb-4"></i>
+                <h3 class="text-muted mb-3">Giỏ hàng của bạn đang trống</h3>
+                <p class="text-muted mb-4">Hãy khám phá những chú thú cưng đáng yêu và thêm chúng vào giỏ hàng!</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a asp-controller="Pets" asp-action="Index" class="btn btn-primary btn-lg rounded-pill">
+                        <i class="fas fa-paw me-2"></i>Xem thú cưng
+                    </a>
+                    <a asp-controller="Pets" asp-action="Featured" class="btn btn-outline-primary btn-lg rounded-pill">
+                        <i class="fas fa-star me-2"></i>Thú cưng nổi bật
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+.cart-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.quantity-controls .btn {
+    border-color: #dee2e6;
+}
+
+.quantity-controls .btn:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+}
+
+.cart-summary {
+    border-radius: 15px !important;
+}
+
+.summary-row {
+    font-size: 1.1rem;
+}
+
+.empty-state i {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Quantity controls
+    document.querySelectorAll('.quantity-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const action = this.dataset.action;
+            const itemId = this.dataset.itemId;
+            const input = document.querySelector(`input[data-item-id="${itemId}"]`);
+            let quantity = parseInt(input.value);
+            
+            if (action === 'increase') {
+                quantity++;
+            } else if (action === 'decrease' && quantity > 1) {
+                quantity--;
+            }
+            
+            updateCartItem(itemId, quantity);
+        });
+    });
+    
+    // Remove item
+    document.querySelectorAll('.remove-item').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const itemId = this.dataset.itemId;
+            removeCartItem(itemId);
+        });
+    });
+});
+
+function updateCartItem(itemId, quantity) {
+    const formData = new FormData();
+    formData.append('cartItemId', itemId);
+    formData.append('quantity', quantity);
+    formData.append('__RequestVerificationToken', document.querySelector('input[name="__RequestVerificationToken"]')?.value);
+
+    fetch('/Cart/UpdateQuantity', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            location.reload();
+        } else {
+            alert(data.message || 'Có lỗi xảy ra');
+        }
+    });
+}
+
+function removeCartItem(itemId) {
+    if (confirm('Bạn có chắc muốn xóa sản phẩm này khỏi giỏ hàng?')) {
+        const formData = new FormData();
+        formData.append('cartItemId', itemId);
+        formData.append('__RequestVerificationToken', document.querySelector('input[name="__RequestVerificationToken"]')?.value);
+
+        fetch('/Cart/RemoveItem', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                location.reload();
+            } else {
+                alert(data.message || 'Có lỗi xảy ra');
+            }
+        });
+    }
+}
+</script>

@@ -1,0 +1,441 @@
+@model PetShopWebsite.Models.Pet
+@{
+    ViewData["Title"] = Model.Name;
+    var relatedPets = ViewBag.RelatedPets as List<PetShopWebsite.Models.Pet>;
+}
+
+@Html.AntiForgeryToken()
+
+<div class="container mt-4">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a asp-controller="Pets" asp-action="Index">Thú cưng</a></li>
+            <li class="breadcrumb-item"><a asp-controller="Pets" asp-action="Category" asp-route-id="@Model.CategoryId">@Model.Category.Name</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <!-- Pet Images -->
+        <div class="col-lg-6">
+            <div class="pet-images">
+                <div class="main-image mb-3">
+                    <img src="@(Model.MainImageUrl ?? "/images/pets/default.jpg")" alt="@Model.Name" class="img-fluid rounded shadow" id="mainImage">
+                </div>
+                @if (!string.IsNullOrEmpty(Model.ImageUrls))
+                {
+                    <div class="thumbnail-images">
+                        <div class="row g-2">
+                            @{
+                                string[] imageUrls = null;
+                                try
+                                {
+                                    if (!string.IsNullOrEmpty(Model.ImageUrls) && Model.ImageUrls.StartsWith("["))
+                                    {
+                                        imageUrls = System.Text.Json.JsonSerializer.Deserialize<string[]>(Model.ImageUrls);
+                                    }
+                                    else if (!string.IsNullOrEmpty(Model.ImageUrls))
+                                    {
+                                        // If it's not JSON, treat as comma-separated URLs
+                                        imageUrls = Model.ImageUrls.Split(',', StringSplitOptions.RemoveEmptyEntries);
+                                    }
+                                }
+                                catch
+                                {
+                                    // If JSON parsing fails, try comma-separated
+                                    imageUrls = Model.ImageUrls?.Split(',', StringSplitOptions.RemoveEmptyEntries);
+                                }
+
+                                if (imageUrls != null && imageUrls.Length > 0)
+                                {
+                                    foreach (var imageUrl in imageUrls)
+                                    {
+                                        <div class="col-3">
+                                            <img src="@imageUrl" alt="@Model.Name" class="img-fluid rounded thumbnail-img" onclick="changeMainImage('@imageUrl')">
+                                        </div>
+                                    }
+                                }
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Pet Details -->
+        <div class="col-lg-6">
+            <div class="pet-details">
+                <h1 class="mb-3">@Model.Name</h1>
+                
+                <div class="pet-info mb-4">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="info-item">
+                                <i class="fas fa-tag text-primary"></i>
+                                <strong>Danh mục:</strong> @Model.Category.Name
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-item">
+                                <i class="fas fa-paw text-primary"></i>
+                                <strong>Giống:</strong> @Model.Breed
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake text-primary"></i>
+                                <strong>Tuổi:</strong> @Model.Age tháng
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-item">
+                                <i class="fas fa-venus-mars text-primary"></i>
+                                <strong>Giới tính:</strong> @Model.Gender
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-item">
+                                <i class="fas fa-weight text-primary"></i>
+                                <strong>Cân nặng:</strong> @Model.Weight kg
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-item">
+                                <i class="fas fa-palette text-primary"></i>
+                                <strong>Màu sắc:</strong> @Model.Color
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Status -->
+                <div class="health-status mb-4">
+                    <h5><i class="fas fa-heart text-danger"></i> Tình trạng sức khỏe</h5>
+                    <div class="d-flex gap-2 mb-2">
+                        @if (Model.IsVaccinated)
+                        {
+                            <span class="badge bg-success">
+                                <i class="fas fa-syringe"></i> Đã tiêm phòng
+                            </span>
+                        }
+                        @if (Model.IsDewormed)
+                        {
+                            <span class="badge bg-info">
+                                <i class="fas fa-shield-virus"></i> Đã tẩy giun
+                            </span>
+                        }
+                        @if (Model.IsFeatured)
+                        {
+                            <span class="badge bg-warning">
+                                <i class="fas fa-star"></i> Nổi bật
+                            </span>
+                        }
+                    </div>
+                    @if (!string.IsNullOrEmpty(Model.HealthStatus))
+                    {
+                        <p class="text-muted">@Model.HealthStatus</p>
+                    }
+                </div>
+
+                <!-- Price -->
+                <div class="price-section mb-4">
+                    @if (Model.SalePrice.HasValue)
+                    {
+                        <div class="sale-price">
+                            <span class="original-price text-decoration-line-through text-muted fs-5">@Model.Price.ToString("N0") ₫</span>
+                            <span class="current-price text-danger fw-bold fs-3">@Model.SalePrice.Value.ToString("N0") ₫</span>
+                            <span class="badge bg-danger ms-2">Giảm @(Math.Round((1 - Model.SalePrice.Value / Model.Price) * 100))%</span>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="current-price text-primary fw-bold fs-3">@Model.Price.ToString("N0") ₫</span>
+                    }
+                </div>
+
+                <!-- Stock Status -->
+                <div class="stock-status mb-4">
+                    @if (Model.StockQuantity > 0)
+                    {
+                        <span class="badge bg-success fs-6">
+                            <i class="fas fa-check"></i> Còn hàng (@Model.StockQuantity con)
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger fs-6">
+                            <i class="fas fa-times"></i> Hết hàng
+                        </span>
+                    }
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons mb-4">
+                    @if (Model.StockQuantity > 0)
+                    {
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary btn-lg" onclick="addToCart(@Model.Id)">
+                                <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                            <button type="button" class="btn btn-outline-success" onclick="buyNow(@Model.Id)">
+                                <i class="fas fa-bolt"></i> Mua ngay
+                            </button>
+                        </div>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-secondary btn-lg" disabled>
+                            <i class="fas fa-times"></i> Hết hàng
+                        </button>
+                    }
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-phone"></i> Liên hệ tư vấn</h6>
+                            <p class="card-text">
+                                <strong>Hotline:</strong> 0123 456 789<br>
+                                <strong>Email:</strong> info@petshop.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Description and Care Instructions -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="petTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">
+                                <i class="fas fa-info-circle"></i> Mô tả
+                            </button>
+                        </li>
+                        @if (!string.IsNullOrEmpty(Model.CareInstructions))
+                        {
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="care-tab" data-bs-toggle="tab" data-bs-target="#care" type="button" role="tab">
+                                    <i class="fas fa-heart"></i> Hướng dẫn chăm sóc
+                                </button>
+                            </li>
+                        }
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">
+                                <i class="fas fa-star"></i> Đánh giá
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="petTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel">
+                            <p>@(Model.Description ?? "Chưa có mô tả chi tiết.")</p>
+                        </div>
+                        @if (!string.IsNullOrEmpty(Model.CareInstructions))
+                        {
+                            <div class="tab-pane fade" id="care" role="tabpanel">
+                                <p>@Model.CareInstructions</p>
+                            </div>
+                        }
+                        <div class="tab-pane fade" id="reviews" role="tabpanel">
+                            <div class="reviews-section">
+                                @if (Model.Reviews.Any())
+                                {
+                                    @foreach (var review in Model.Reviews.Where(r => r.IsApproved))
+                                    {
+                                        <div class="review-item mb-3 p-3 border rounded">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <h6>@review.User.FullName</h6>
+                                                    <div class="rating mb-2">
+                                                        @for (int i = 1; i <= 5; i++)
+                                                        {
+                                                            if (i <= review.Rating)
+                                                            {
+                                                                <i class="fas fa-star text-warning"></i>
+                                                            }
+                                                            else
+                                                            {
+                                                                <i class="far fa-star text-muted"></i>
+                                                            }
+                                                        }
+                                                    </div>
+                                                    <p>@review.Comment</p>
+                                                </div>
+                                                <small class="text-muted">@review.CreatedAt.ToString("dd/MM/yyyy")</small>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <p class="text-muted">Chưa có đánh giá nào.</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Pets -->
+    @if (relatedPets != null && relatedPets.Any())
+    {
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3><i class="fas fa-paw"></i> Thú cưng liên quan</h3>
+                <div class="row">
+                    @foreach (var pet in relatedPets)
+                    {
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="@(pet.MainImageUrl ?? "/images/pets/default.jpg")" class="card-img-top" alt="@pet.Name" style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h6 class="card-title">@pet.Name</h6>
+                                    <p class="text-muted small">@pet.Breed</p>
+                                    <p class="text-primary fw-bold">@((pet.SalePrice ?? pet.Price).ToString("N0")) ₫</p>
+                                </div>
+                                <div class="card-footer bg-transparent">
+                                    <a asp-action="Details" asp-route-id="@pet.Id" class="btn btn-outline-primary w-100">
+                                        Xem chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+.thumbnail-img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail-img:hover {
+    transform: scale(1.05);
+}
+
+.info-item {
+    margin-bottom: 0.5rem;
+}
+
+.info-item i {
+    width: 20px;
+}
+
+.price-section .original-price {
+    font-size: 1.2rem;
+}
+
+.price-section .current-price {
+    font-size: 2rem;
+}
+</style>
+
+<script>
+function changeMainImage(imageUrl) {
+    document.getElementById('mainImage').src = imageUrl;
+}
+
+function addToCart(petId) {
+    $.ajax({
+        url: '@Url.Action("AddToCart", "Cart")',
+        type: 'POST',
+        data: {
+            petId: petId,
+            quantity: 1,
+            __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+        },
+        success: function(response) {
+            if (response.success) {
+                // Show success message
+                showToast('success', response.message);
+                // Update cart count
+                if (response.cartCount) {
+                    $('#cartCount').text(response.cartCount).show();
+                }
+                // Reload cart count from server to ensure accuracy
+                if (typeof loadCartCount === 'function') {
+                    loadCartCount();
+                }
+            } else {
+                showToast('error', response.message);
+            }
+        },
+        error: function() {
+            showToast('error', 'Có lỗi xảy ra. Vui lòng thử lại!');
+        }
+    });
+}
+
+function buyNow(petId) {
+    // Add to cart first, then redirect to checkout
+    $.ajax({
+        url: '@Url.Action("AddToCart", "Cart")',
+        type: 'POST',
+        data: {
+            petId: petId,
+            quantity: 1,
+            __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+        },
+        success: function(response) {
+            if (response.success) {
+                // Redirect to checkout
+                window.location.href = '@Url.Action("Checkout", "Cart")';
+            } else {
+                showToast('error', response.message);
+            }
+        },
+        error: function() {
+            showToast('error', 'Có lỗi xảy ra. Vui lòng thử lại!');
+        }
+    });
+}
+
+function showToast(type, message) {
+    // Create toast element
+    const toastHtml = `
+        <div class="toast align-items-center text-white bg-${type === 'success' ? 'success' : 'danger'} border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    ${message}
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    `;
+    
+    // Add to toast container or create one
+    let toastContainer = document.querySelector('.toast-container');
+    if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.className = 'toast-container position-fixed top-0 end-0 p-3';
+        document.body.appendChild(toastContainer);
+    }
+    
+    toastContainer.insertAdjacentHTML('beforeend', toastHtml);
+    
+    // Show toast
+    const toastElement = toastContainer.lastElementChild;
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
+    
+    // Remove toast element after it's hidden
+    toastElement.addEventListener('hidden.bs.toast', () => {
+        toastElement.remove();
+    });
+}
+</script>

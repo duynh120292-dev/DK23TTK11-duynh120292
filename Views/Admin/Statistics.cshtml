@@ -1,0 +1,306 @@
+@model PetShopWebsite.ViewModels.AdminStatisticsViewModel
+@{
+    ViewData["Title"] = "Thống Kê & Báo Cáo";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Thống Kê & Báo Cáo</h1>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fas fa-download"></i> Xuất Báo Cáo
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"><i class="fas fa-file-excel"></i> Xuất Excel</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-file-pdf"></i> Xuất PDF</a>
+        </div>
+    </div>
+</div>
+
+<!-- Revenue Chart -->
+<div class="row">
+    <div class="col-xl-8 col-lg-7">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0 font-weight-bold text-primary">Doanh Thu Theo Tháng</h6>
+                <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow">
+                        <a class="dropdown-item" href="#">Xem chi tiết</a>
+                        <a class="dropdown-item" href="#">Xuất dữ liệu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders by Status -->
+    <div class="col-xl-4 col-lg-5">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Đơn Hàng Theo Trạng Thái</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-pie pt-4 pb-2">
+                    <canvas id="orderStatusChart"></canvas>
+                </div>
+                <div class="mt-4 text-center small">
+                    @if (Model.OrdersByStatus != null)
+                    {
+                        @foreach (var status in Model.OrdersByStatus)
+                        {
+                            <span class="mr-2">
+                                <i class="fas fa-circle text-primary"></i> @status.Key: @status.Value
+                            </span>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Selling Pets -->
+<div class="row">
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Top 10 Thú Cưng Bán Chạy</h6>
+            </div>
+            <div class="card-body">
+                @if (Model.TopSellingPets != null && Model.TopSellingPets.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tên Thú Cưng</th>
+                                    <th>Đã Bán</th>
+                                    <th>Doanh Thu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < Model.TopSellingPets.Count; i++)
+                                {
+                                    var pet = Model.TopSellingPets[i];
+                                    <tr>
+                                        <td>@(i + 1)</td>
+                                        <td>@pet.PetName</td>
+                                        <td>
+                                            <span class="badge badge-primary">@pet.TotalSold</span>
+                                        </td>
+                                        <td>@pet.TotalRevenue.ToString("N0") ₫</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center py-4">
+                        <i class="fas fa-chart-bar fa-2x text-muted mb-2"></i>
+                        <p class="text-muted">Chưa có dữ liệu bán hàng</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Statistics -->
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Thống Kê Theo Danh Mục</h6>
+            </div>
+            <div class="card-body">
+                @if (Model.CategoryStats != null && Model.CategoryStats.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Danh Mục</th>
+                                    <th>Số Lượng</th>
+                                    <th>Đã Bán</th>
+                                    <th>Tỷ Lệ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var category in Model.CategoryStats)
+                                {
+                                    var percentage = category.TotalPets > 0 ? (category.TotalSold * 100.0 / category.TotalPets) : 0;
+                                    <tr>
+                                        <td>@category.CategoryName</td>
+                                        <td>@category.TotalPets</td>
+                                        <td>@category.TotalSold</td>
+                                        <td>
+                                            <div class="progress" style="height: 20px;">
+                                                <div class="progress-bar" role="progressbar" style="width: @percentage%">
+                                                    @percentage.ToString("F1")%
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center py-4">
+                        <i class="fas fa-list fa-2x text-muted mb-2"></i>
+                        <p class="text-muted">Chưa có dữ liệu danh mục</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Stats Cards -->
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Doanh Thu Hôm Nay
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">0 ₫</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Đơn Hàng Hôm Nay
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            Khách Hàng Mới
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-user-plus fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Tồn Kho Thấp
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-exclamation-triangle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Revenue Chart
+        var ctx = document.getElementById('revenueChart').getContext('2d');
+        var revenueChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.MonthlyRevenue?.Select(m => m.Month) ?? new List<string>())),
+                datasets: [{
+                    label: 'Doanh Thu (₫)',
+                    data: @Html.Raw(Json.Serialize(Model.MonthlyRevenue?.Select(m => m.Revenue) ?? new List<decimal>())),
+                    borderColor: 'rgb(75, 192, 192)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return new Intl.NumberFormat('vi-VN').format(value) + ' ₫';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Order Status Chart
+        var ctx2 = document.getElementById('orderStatusChart').getContext('2d');
+        var orderStatusChart = new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.OrdersByStatus?.Keys.ToList() ?? new List<string>())),
+                datasets: [{
+                    data: @Html.Raw(Json.Serialize(Model.OrdersByStatus?.Values.ToList() ?? new List<int>())),
+                    backgroundColor: [
+                        '#4e73df',
+                        '#1cc88a',
+                        '#36b9cc',
+                        '#f6c23e',
+                        '#e74a3b'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+}
